@@ -2,8 +2,7 @@
 pandas
 
 # B: NLP Engineer
-openai
-instructor
+ollama
 pydantic
 
 # C: Graph Scientist
