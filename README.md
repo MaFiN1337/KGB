@@ -1,95 +1,109 @@
-# ТЗ: Проєкт «Семантичний граф репресій: Мережа лояльності та звинувачень»
+# KGB Repression Semantic Graph
 
-**Мета:** Автоматично перетворити сирі XML-анотації архівних справ КДБ на інтерактивний граф, який візуалізує, хто проти кого свідчив (червоні зв'язки) та хто кого захищав (зелені зв'язки).
-
----
-
-## Учасник А: Data Engineer (Парсинг та Препроцесинг)
-
-**Суть роботи:** Витягнути текст із XML, відсортувати його так, щоб він читався як нормальний документ, і передати Учаснику Б.
-
-**Кроки:**
-1. Розпарсити файл `annotations.xml`. Знайти всі теги `<box>` та витягнути з них атрибути `Contented Text` (рукописний текст) або `Printed Text` (друкований текст), а також координати `ytl` (верхня межа рядка) та `xtl` (ліва межа).
-2. Згрупувати текст по кожному зображенню (`image id`).
-3. **Критична логіка:** Текст в анотаціях розбитий на окремі рядки. Щоб Учасник Б міг робити NLP, рядки треба склеїти в абзаци. Для цього відсортуйте координати `ytl` (зверху вниз) та `xtl` (зліва направо).
-4. Очистити сміття: відфільтрувати короткі блоки, що є просто номерами сторінок (наприклад, "179", "180") або печатками.
-
-**Інструменти:** 
-* `Python` (вбудовані бібліотеки `xml.etree.ElementTree` або `BeautifulSoup` для парсингу XML).
-* `Pandas` (зручно закинути всі координати в датафрейм і зробити `df.sort_values(by=['image_id', 'ytl'])`).
-
-> 🔄 **Хендовер (Передача даних) від А до Б:**
-> Формат: `JSON` файл.
-> Приклад структури, яку чекає Учасник Б:
-> ```json
-> [
->   {
->     "doc_id": "ГДАСБУ_ф6_оп1_спр51115фп_244.jpg",
->     "full_text": "Вопрос: А о каких-либо антисоветких проявлениях Ситдикова Вам было известно? ответ: Нет, Ситдикова я знаю только как добросовестного работника и честного советского человека..."
->   }
-> ]
-> ```
+Automatically transforms raw XML annotations of KGB archival cases into an interactive graph that visualizes who testified against whom **(red links)** and who defended whom **(green links)**.
 
 ---
 
-## Учасник Б: NLP & Prompt Engineer (Видобувач Сутностей)
+## Overview
 
-**Суть роботи:** Отримати склеєний текст від Учасника А і за допомогою нейромережі витягнути з нього структуровані зв'язки.
+This project processes scanned KGB archive documents from the State Archive of the Security Service of Ukraine (ГДАСБУ). Using OCR annotations, NLP entity extraction, and graph visualization, we reconstruct the hidden social network of loyalty and accusations inside Soviet-era repression cases.
 
-**Кроки:**
-1. Написати системний промпт, який пояснює моделі, що вона читає архіви КДБ. 
-2. Налаштувати видобування (Structured Output), щоб модель повертала суворо JSON. Її задача знайти: 
-   * **Source** (Хто говорить/допитує, наприклад, "Майор Касьянов" або "Бронштейн").
-   * **Target** (Про кого йде мова, наприклад, "Ситдиков Ахмет").
-   * **Sentiment** (Тональність: "Захист" якщо текст хвалить, як "честного советского человека", або "Звинувачення", якщо текст містить "антирадянська агітація").
-   * **Relation** (Тип зв'язку: "Слідчий-Допитуваний", "Свідок-Обвинувачений").
-3. Запустити скрипт по всьому JSON, який передав Учасник А.
-4. Написати простеньку функцію нормалізації імен (щоб "Ситдиков", "Сітдіков А.С." та "Ахмет Ситдиков" злилися в одне ID для графа).
-
-**Інструменти:**
-* **API:** `OpenAI API` (gpt-4o-mini ідеально підійде по ціні/якості для хакатону) або `Anthropic Claude`.
-* **Бібліотеки:** `Instructor` (Python бібліотека, яка змушує LLM видавати ідеально валідований Pydantic JSON) або просто базовий виклик `LangChain`.
-
-> 🔄 **Хендовер (Передача даних) від Б до В:**
-> Формат: 2 файли CSV (або JSON) — `nodes.csv` (вузли) та `edges.csv` (ребра).
-> Приклад `edges.csv`:
-> `source, target, relation, sentiment, evidence_quote`
-> `Котляр Г.К., Сітдіков А.С., свідок_про, Захист, "никаких антисоветских проявлений... не наблюдал"`
-> `Майор Касьянов, Котляр Г.К., допит, Нейтрально, "Протокол допроса"`
+**4 archival cases processed:**
+- `ф5_оп1_спр8441` — 97 pages
+- `ф6_оп1_спр51115фп` — 90 pages
+- `ф13_оп1_спр1121` — 108 pages
+- `ф16_оп1_спр705` — 18 pages
 
 ---
 
-## Учасник В: Graph Data Scientist (Архітектор Мережі)
+## Pipeline
 
-**Суть роботи:** Взяти таблиці від Учасника Б і перетворити їх на красиву інтерактивну мережу, з якою зможе взаємодіяти журі.
-
-**Кроки:**
-1. Ініціалізувати граф із переданих даних. Додати вузли (люди) та ребра (зв'язки).
-2. Налаштувати візуальні правила:
-   * **Колір ребер:** Зелений, якщо sentiment == "Захист", Червоний, якщо "Звинувачення", Сірий, якщо "Нейтрально" (наприклад, формальний допит).
-   * **Розмір вузла (Node Size):** Рахувати за метрикою Degree Centrality (чим більше ребер сходиться до людини, тим більша її "бульбашка"). Сітдіков має бути найбільшим вузлом у центрі.
-3. Згенерувати інтерактивний HTML-файл. Налаштувати фізику (щоб вузли відштовхувалися один від одного і граф виглядав органічно).
-4. Додати tooltip (виринаючі підказки): коли користувач наводить мишку на ребро, має показуватися цитата з документа (`evidence_quote`).
-
-**Інструменти:**
-* `NetworkX` (Python) — для математичної побудови графа та підрахунку ваг вузлів.
-* `PyVis` (Python) — супер проста бібліотека для візуалізації NetworkX графів в інтерактивний HTML. (Альтернатива, якщо не хочете кодити візуалізацію: експортувати дані у форматі `.gexf` і відкрити в десктопній програмі `Gephi`, щоб зробити красиві рендери картинок для презентації).
+```
+annotations.xml  →  [A: Parser]  →  documents.json
+                                         ↓
+                               [B: NLP Extractor]
+                                         ↓
+                          nodes.csv + edges.csv
+                                         ↓
+                              [C: Graph Builder]
+                                         ↓
+                               graph.html (interactive)
+```
 
 ---
 
-## Таймлайн (Синхронізація команди)
+## Project Structure
 
-* **День 1 (Підготовка):** 
-  * А пише парсер і тестує його на 2-3 зображеннях. 
-  * Б бере 2-3 скріни очима і пише/тестує промпти в ChatGPT інтерфейсі. 
-  * В створює тестовий граф на 5 видуманих іменах, налаштовує кольори і фізику в PyVis.
-* **День 2 (Перший прогін):** 
-  * Синхронізація №1: А передає Б перший шматок реальних даних (наприклад, 10 склеєних текстів). 
-  * Б проганяє їх через API, ловить помилки (наприклад, LLM не зрозуміла суржик або скорочення "б/п"), править промпт.
-  * Синхронізація №2: Б передає В тестовий CSV з ребрами. В завантажує їх у свій скрипт і дивиться, як це виглядає.
-* **День 3 (Масштабування):** 
-  * А видає весь датасет (повний JSON). 
-  * Б запускає великий скрипт на всі дані, робить нормалізацію імен. 
-  * В інтегрує фінальний CSV у граф, грається з лейблами та фізикою відштовхування.
-* **День 4 (Полірування):** 
-  * Код заморожується. Усі троє сідають писати презентацію. Робите скріншоти найкрасивіших частин графа. Вписуєте в слайди інсайти (наприклад: "Ми виявили, що всі свідки захищали обвинуваченого, але прокурор вимагав скасувати вирок").
+```
+KGB/
+├── data/
+│   ├── raw/                  # original XML — do not modify
+│   │   └── full_annotation.xml
+│   ├── interim/              # output from Participant A
+│   │   └── documents.json
+│   └── processed/            # output from Participant B
+│       ├── nodes.csv
+│       └── edges.csv
+├── src/
+│   ├── parse_xml.py          # A: XML parser
+│   ├── validate.py           # A: output validator
+│   ├── extract_entities.py   # B: NLP entity extractor
+│   └── build_graph.py        # C: graph builder
+├── output/
+│   └── graph.html            # final interactive graph
+├── notebooks/                # experiments only
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## How to Run
+
+**1. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**2. Parse XML annotations (Participant A)**
+```bash
+# Full dataset
+python src/parse_xml.py --input data/raw/full_annotation.xml --output data/interim/documents.json
+
+# Test with 10 documents
+python src/parse_xml.py --input data/raw/full_annotation.xml --output data/interim/documents_10.json --limit 10
+
+```
+
+**3. Extract entities (Participant B)**
+```bash
+python src/extract_entities.py --input data/interim/documents.json
+```
+
+**4. Build graph (Participant C)**
+```bash
+python src/build_graph.py
+# opens output/graph.html
+```
+
+---
+
+## Graph Logic
+
+| Element | Rule |
+|---|---|
+| 🟢 Green edge | Sentiment == "Defense" |
+| 🔴 Red edge | Sentiment == "Accusation" |
+| ⚫ Grey edge | Sentiment == "Neutral" |
+| Node size | Degree centrality — more connections = bigger node |
+| Tooltip | Hover over edge → shows original quote from document |
+
+---
+
+## Team
+
+| Role | Responsibility |
+|---|---|
+| **A — Data Engineer** | XML parsing, text reconstruction, JSON handover |
+| **B — NLP Engineer** | Entity extraction via LLM, name normalization |
+| **C — Graph Scientist** | Network construction, interactive visualization |
