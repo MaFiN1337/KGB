@@ -19,16 +19,20 @@ This project processes scanned KGB archive documents from the State Archive of t
 ## Pipeline
 
 ```
-annotations.xml  →  [A: Parser]  →  documents.json
-                                         ↓
-                               [B: NLP Extractor]
-                                         ↓
-                          nodes.csv + edges.csv
-                                         ↓
-                              [C: Graph Builder]
-                                         ↓
+annotations.xml  →  [parse_xml]  →  documents.json
+                                          ↓
+                               [extract_entities]  ←── Ollama (llama3.1:8b)
+                                          ↓
+                               [normalize_names]   ←── Ollama (llama3.1:8b)
+                                          ↓
+                              nodes.csv + edges.csv
+                                          ↓
+                                  [graph builder]
+                                          ↓
                                graph.html (interactive)
 ```
+
+`extract_entities` and `normalize_names` run as a single command — normalization is triggered automatically at the end of extraction. Use `--keep-raw` to retain the intermediate `edges_raw.csv`.
 
 ---
 
@@ -37,21 +41,18 @@ annotations.xml  →  [A: Parser]  →  documents.json
 ```
 KGB/
 ├── data/
-│   ├── raw/                  # original XML — do not modify
+│   ├── raw/                        # original XML — do not modify
 │   │   └── full_annotation.xml
-│   ├── interim/              # output from Participant A
-│   │   └── documents.json
-│   └── processed/            # output from Participant B
-│       ├── nodes.csv
-│       └── edges.csv
+│   └── interim/                    # output from parse_xml
+│       └── documents.json
 ├── src/
-│   ├── parse_xml.py          # A: XML parser
-│   ├── validate.py           # A: output validator
-│   ├── extract_entities.py   # B: NLP entity extractor
-│   └── build_graph.py        # C: graph builder
-├── output/
-│   └── graph.html            # final interactive graph
-├── notebooks/                # experiments only
+│   ├── merge_CVAT.py               # merge multi-annotator CVAT exports
+│   ├── parse_xml.py                # XML → documents.json
+│   ├── extract_entities.py         # pass 1: LLM relation extractor
+│   ├── normalize_names.py          # pass 2: LLM name normalizer
+│   └── eval_edges.py               # eval extraction quality vs expected
+├── tests/
+│   └── data/                       # local test datasets (gitignored)
 ├── requirements.txt
 └── README.md
 ```
@@ -63,27 +64,31 @@ KGB/
 **1. Install dependencies**
 ```bash
 pip install -r requirements.txt
+# Requires Ollama running locally: https://ollama.com
+ollama pull llama3.1:8b
 ```
 
-**2. Parse XML annotations (Participant A)**
+**2. Parse XML annotations**
 ```bash
-# Full dataset
 python src/parse_xml.py --input data/raw/full_annotation.xml --output data/interim/documents.json
-
-# Test with 10 documents
-python src/parse_xml.py --input data/raw/full_annotation.xml --output data/interim/documents_10.json --limit 10
-
 ```
 
-**3. Extract entities (Participant B)**
+**3. Extract entities + normalize names**
 ```bash
+# Full dataset — produces data/processed/nodes.csv and edges.csv
 python src/extract_entities.py --input data/interim/documents.json
+
+# Test dataset
+python src/extract_entities.py --input tests/data/documents_test.json --output_dir data/processed
+
+# Keep intermediate edges_raw.csv for debugging
+python src/extract_entities.py --input data/interim/documents.json --keep-raw
 ```
 
-**4. Build graph (Participant C)**
+**4. Evaluate extraction quality**
 ```bash
-python src/build_graph.py
-# opens output/graph.html
+python src/eval_edges.py
+# Recall / Precision / F1 vs tests/data/edges_expected.csv
 ```
 
 ---
@@ -92,9 +97,9 @@ python src/build_graph.py
 
 | Element | Rule |
 |---|---|
-| 🟢 Green edge | Sentiment == "Defense" |
-| 🔴 Red edge | Sentiment == "Accusation" |
-| ⚫ Grey edge | Sentiment == "Neutral" |
+| 🟢 Green edge | Sentiment == "Захист" (Defense) |
+| 🔴 Red edge | Sentiment == "Звинувачення" (Accusation) |
+| ⚫ Grey edge | Sentiment == "Нейтрально" (Neutral) |
 | Node size | Degree centrality — more connections = bigger node |
 | Tooltip | Hover over edge → shows original quote from document |
 
