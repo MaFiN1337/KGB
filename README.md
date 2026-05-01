@@ -85,12 +85,6 @@ python src/extract_entities.py --input tests/data/documents_test.json --output_d
 python src/extract_entities.py --input data/interim/documents.json --keep-raw
 ```
 
-**4. Evaluate extraction quality**
-```bash
-python src/eval_edges.py
-# Recall / Precision / F1 vs tests/data/edges_expected.csv
-```
-
 ---
 
 ## Graph Logic

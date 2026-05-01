@@ -17,5 +17,6 @@ Thumbs.db
 # Generated pipeline output — run the pipeline to reproduce
 data/processed/
 
-# Test data — local only, not tracked
+# Test data and local dev scripts — not tracked
 tests/data/
+src/eval_edges.py
