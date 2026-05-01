@@ -1,0 +1,11 @@
+# A: Data Engineer
+pandas
+
+# B: NLP Engineer
+openai
+instructor
+pydantic
+
+# C: Graph Scientist
+networkx
+pyvis
