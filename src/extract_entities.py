@@ -91,6 +91,7 @@ _SKIP_NAMES = {
     "его", "её", "их", "себя", "ему", "ей",
     "свидетель", "обвиняемый", "допрашиваемый", "следователь",
     "уполномоченный",
+    "[автор]",  # unresolved speaker placeholder
 }
 
 
@@ -203,7 +204,7 @@ def main():
         doc_id = str(doc["id"])
         text = doc.get("full_text", "").strip()
 
-        if len(text) < 50:
+        if len(text) < 150:
             print(f"[{i}/{len(documents)}] SKIP  id={doc_id}")
             continue
 
