@@ -79,7 +79,7 @@ def parse_annotations(xml_path: str, limit: int = None) -> list[dict]:
             })
 
         if not rows:
-            print(f"Image {image_name} — no text found")
+            print(f"  [WARNING] Image {image_name} — no text found")
             continue
 
         df = pd.DataFrame(rows)
@@ -88,6 +88,7 @@ def parse_annotations(xml_path: str, limit: int = None) -> list[dict]:
         full_text = " ".join(df["text"].tolist())
 
         results.append({
+            "id": len(results),
             "doc_id": image_name,
             "full_text": full_text,
         })
