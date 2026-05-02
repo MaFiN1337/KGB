@@ -7,8 +7,6 @@ import os
 import sys
 import subprocess
 from pathlib import Path
-
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 from typing import Literal
 
 from pydantic import BaseModel
@@ -18,6 +16,8 @@ try:
 except ImportError:
     print("Run: pip install ollama")
     sys.exit(1)
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 DEFAULT_MODEL = "llama3.1:8b"
 
@@ -81,6 +81,10 @@ _RANK_RE = re.compile(
 )
 _INITIALS_RE = re.compile(r"\s+[А-ЯЇІЄа-яїіє]\.[А-ЯЇІЄа-яїіє]\.?$")
 _SINGLE_INITIAL_RE = re.compile(r"\s+[А-ЯЇІЄа-яїіє]\.?$")
+_PATRONYMIC_RE = re.compile(
+    r"^[А-ЯЁІЇЄ][а-яёіїє]+(ович|евич|євич|овна|евна|євна|івна|йович)$",
+    re.IGNORECASE,
+)
 
 _SKIP_NAMES = {
     "я", "он", "она", "они", "мы", "вы", "ты",
@@ -88,12 +92,6 @@ _SKIP_NAMES = {
     "свидетель", "обвиняемый", "допрашиваемый", "следователь",
     "уполномоченный",
 }
-
-# standalone patronymics like "Васильович", "Олексіївна" — not valid person names
-_PATRONYMIC_RE = re.compile(
-    r"^[А-ЯЁІЇЄ][а-яёіїє]+(ович|евич|євич|овна|евна|євна|івна|йович|йович)$",
-    re.IGNORECASE,
-)
 
 
 class Relation(BaseModel):
@@ -117,10 +115,6 @@ def detect_speaker_regex(text: str) -> str | None:
     return " ".join(words[:2]) if words else None
 
 
-def _doc_sort_key(doc: dict) -> int:
-    return int(doc["id"])
-
-
 def _clean_name(raw: str) -> str:
     name = _RANK_RE.sub("", raw.strip())
     name = _INITIALS_RE.sub("", name)
@@ -136,9 +130,7 @@ def is_valid_name(name: str) -> bool:
         return False
     if not re.search(r"[А-ЯЁа-яёІіЇїЄє]", cleaned):
         return False
-    # reject bare patronymics without a preceding surname
-    first_word = cleaned.split()[0]
-    if _PATRONYMIC_RE.match(first_word):
+    if _PATRONYMIC_RE.match(cleaned.split()[0]):
         return False
     return True
 
@@ -180,10 +172,10 @@ def main():
     parser.add_argument("--input", default="data/interim/documents.json")
     parser.add_argument("--output_dir", default="data/processed")
     parser.add_argument("--model", default=DEFAULT_MODEL)
-    parser.add_argument("--limit", type=int, default=None)
-    parser.add_argument("--offset", type=int, default=0)
+    parser.add_argument("--limit", type=int, default=None, help="Process only the first N documents")
+    parser.add_argument("--offset", type=int, default=0, help="Skip the first N documents")
     parser.add_argument("--keep-raw", action="store_true",
-                        help="Keep edges_raw.csv intermediate file after normalization")
+                        help="Keep edges_raw.csv after normalization")
     args = parser.parse_args()
 
     try:
@@ -197,10 +189,9 @@ def main():
     with open(args.input, encoding="utf-8") as f:
         documents = json.load(f)
 
-    documents.sort(key=_doc_sort_key)
     documents = documents[args.offset:]
     if args.limit:
-        documents = documents[: args.limit]
+        documents = documents[:args.limit]
 
     os.makedirs(args.output_dir, exist_ok=True)
 
@@ -248,10 +239,7 @@ def main():
 
     edges_raw_path = Path(args.output_dir) / "edges_raw.csv"
     with open(edges_raw_path, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(
-            f,
-            fieldnames=["source", "target", "sentiment", "evidence_quote", "id"],
-        )
+        w = csv.DictWriter(f, fieldnames=["source", "target", "sentiment", "evidence_quote", "id"])
         w.writeheader()
         w.writerows(all_edges)
 
