@@ -150,7 +150,7 @@ def _extract_json(raw: str) -> dict:
     return {"relations": []}
 
 
-def call_llm(text: str, current_speaker: str | None, model: str) -> DocumentResponse:
+def call_llm(text: str, current_speaker: str | None, model: str, threads: int) -> DocumentResponse:
     speaker_line = f"[Автор: {current_speaker}]\n\n" if current_speaker else ""
     try:
         resp = _ollama.chat(
@@ -160,7 +160,7 @@ def call_llm(text: str, current_speaker: str | None, model: str) -> DocumentResp
                 {"role": "user", "content": speaker_line + text[:3500]},
             ],
             format="json",
-            options={"temperature": 0.1, "num_ctx": 4096, "num_predict": 512},
+            options={"temperature": 0.1, "num_ctx": 4096, "num_predict": 512, "num_thread": threads},
         )
         data = _extract_json(resp.message.content)
         return DocumentResponse(**data)
@@ -175,6 +175,8 @@ def main():
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--limit", type=int, default=None, help="Process only the first N documents")
     parser.add_argument("--offset", type=int, default=0, help="Skip the first N documents")
+    parser.add_argument("--threads", type=int, default=6,
+                        help="CPU threads for Ollama inference (default: 6)")
     parser.add_argument("--keep-raw", action="store_true",
                         help="Keep edges_raw.csv after normalization")
     args = parser.parse_args()
@@ -214,7 +216,7 @@ def main():
 
         print(f"[{i}/{len(documents)}] id={doc_id}", end=" ... ", flush=True)
 
-        result = call_llm(text, current_speaker, args.model)
+        result = call_llm(text, current_speaker, args.model, args.threads)
 
         print(f"speaker={current_speaker or '?'}", end=" | ", flush=True)
 
