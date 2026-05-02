@@ -118,7 +118,7 @@ def detect_speaker_regex(text: str) -> str | None:
 
 
 def _doc_sort_key(doc: dict) -> int:
-    return int(doc.get("id", 0))
+    return int(doc["id"])
 
 
 def _clean_name(raw: str) -> str:
@@ -209,7 +209,7 @@ def main():
     current_speaker: str | None = None
 
     for i, doc in enumerate(documents, 1):
-        doc_id = str(doc.get("id", doc.get("doc_id", i)))
+        doc_id = str(doc["id"])
         text = doc.get("full_text", "").strip()
 
         if len(text) < 50:
