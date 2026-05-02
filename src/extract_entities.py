@@ -160,7 +160,7 @@ def call_llm(text: str, current_speaker: str | None, model: str) -> DocumentResp
                 {"role": "user", "content": speaker_line + text[:3500]},
             ],
             format="json",
-            options={"temperature": 0.1},
+            options={"temperature": 0.1, "num_ctx": 4096, "num_predict": 512},
         )
         data = _extract_json(resp.message.content)
         return DocumentResponse(**data)
