@@ -9,7 +9,7 @@ Automatically transforms raw XML annotations of KGB archival cases into an inter
 This project processes scanned KGB archive documents from the State Archive of the Security Service of Ukraine (ГДАСБУ). Using OCR annotations, NLP entity extraction, and graph visualization, we reconstruct the hidden social network of loyalty and accusations inside Soviet-era repression cases.
 
 **4 archival cases processed:**
-- `ф5_оп1_спр8441` — 97 pages
+- `ф5_оп1_спр8441` — 107 pages
 - `ф6_оп1_спр51115фп` — 90 pages
 - `ф13_оп1_спр1121` — 108 pages
 - `ф16_оп1_спр705` — 18 pages
@@ -64,7 +64,8 @@ KGB/
 **1. Install dependencies**
 ```bash
 pip install -r requirements.txt
-# Requires Ollama running locally: https://ollama.com
+# Requires Ollama running locally: 
+irm https://ollama.com/install.ps1 | iex
 ollama pull llama3.1:8b
 ```
 

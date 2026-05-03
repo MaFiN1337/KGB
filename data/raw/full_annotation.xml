@@ -27755,7 +27755,1213 @@
       <attribute name="Contented Text">Подсулд. Свиде. Филонюк:</attribute>
     </box>
   </image>
-  <image id="216" name="ГДАСБУ_ф5_оп1_спр8441_138.jpg" width="2044" height="3031">
+  <image id="216" name="ГДАСБУ_ф5_оп1_спр8441_150.jpg" width="1836" height="2732">
+    <box label="printed_text" source="manual" occluded="0" xtl="141.26" ytl="883.31" xbr="557.61" ybr="930.90" z_order="0">
+      <attribute name="Printed Text">Фамилия, имя и отчество</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="467.20" ytl="788.15" xbr="1291.57" ybr="848.82" z_order="0">
+      <attribute name="Printed Text">по материалам уголовного дела (арх. №. 8441)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="778.07" ytl="748.87" xbr="1065.94" ybr="788.96" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="534.40" ytl="689.24" xbr="820.22" ybr="748.87" z_order="0">
+      <attribute name="Printed Text">Манскэ Е.Л.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="307.19" ytl="692.32" xbr="525.20" ybr="747.84" z_order="0">
+      <attribute name="Printed Text">в отношении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="626.93" ytl="608.02" xbr="1118.37" ybr="667.65" z_order="0">
+      <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="1233.16" ytl="513.72" xbr="1597.17" ybr="562.49" z_order="0">
+      <attribute name="Date Printed Text">декабря 1995г.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1033.32" ytl="497.06" xbr="1600.74" ybr="567.25" z_order="0">
+      <attribute name="Contented Text">14 декабря 1995г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1279.56" ytl="437.58" xbr="1630.48" ybr="492.30" z_order="0">
+      <attribute name="Printed Text">В.П.Даниленко.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="788.27" ytl="341.23" xbr="1453.20" ybr="507.77" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1017.90" ytl="354.31" xbr="1378.29" ybr="405.47" z_order="0">
+      <attribute name="Printed Text">юстиции 2 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="978.84" ytl="323.39" xbr="1396.37" ybr="360.26" z_order="0">
+      <attribute name="Printed Text">государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="655.27" ytl="259.15" xbr="1457.04" ybr="316.20" z_order="0">
+      <attribute name="Printed Text">Первый зам. Генеральный прокурор Украины</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1072.63" ytl="212.21" xbr="1315.45" ybr="251.51" z_order="0">
+      <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="127.81" ytl="1809.52" xbr="1284.95" ybr="1867.35" z_order="0">
+      <attribute name="Printed Text">службу у белых. Решение по делу не изменялось.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1670.57" ytl="4.47" xbr="1763.20" ybr="95.71" z_order="0">
+      <attribute name="Contented Text">85</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="252.25" ytl="2116.33" xbr="1791.72" ybr="2176.70" z_order="0">
+      <attribute name="Printed Text">Сведений о совершении Манскэ Е.Д. контрреволюционных преступ-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="139.14" ytl="1113.74" xbr="417.95" ybr="1160.73" z_order="0">
+      <attribute name="Printed Text">Место рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="458.68" ytl="1095.73" xbr="721.83" ybr="1149.77" z_order="0">
+      <attribute name="Printed Text">г. Одесса.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="142.17" ytl="1264.67" xbr="755.53" ybr="1310.81" z_order="0">
+      <attribute name="Printed Text">Место работы и должность до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="137.73" ytl="1039.65" xbr="378.95" ybr="1082.73" z_order="0">
+      <attribute name="Printed Text">Год рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="760.78" ytl="1263.62" xbr="1206.38" ybr="1318.14" z_order="0">
+      <attribute name="Printed Text">сестра милосердия</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="144.27" ytl="1413.56" xbr="624.47" ybr="1461.79" z_order="0">
+      <attribute name="Printed Text">Место жительства до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="654.88" ytl="1400.97" xbr="869.82" ybr="1452.35" z_order="0">
+      <attribute name="Printed Text">г. Ялта.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="141.75" ytl="1547.54" xbr="1639.72" ybr="1604.06" z_order="0">
+      <attribute name="Printed Text">Когда, каким органом, по каким статьям УК, был осужден (репрессирован), в чем признан</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="141.80" ytl="1614.94" xbr="1794.10" ybr="1673.64" z_order="0">
+      <attribute name="Printed Text">виновным, изменялось ли решение по делу и как: 22 декабря 1920 года Чрезвычайной</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="127.81" ytl="1680.89" xbr="1793.08" ybr="1743.78" z_order="0">
+      <attribute name="Printed Text">тройкой Крымской ударной группы Упрособотделов Южного и Юго-Запад-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="120.26" ytl="1748.81" xbr="1715.10" ybr="1806.70" z_order="0">
+      <attribute name="Printed Text">ного фронтов вынесено постановление о расстреле Манскэ Е.Л. за</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="243.52" ytl="1862.01" xbr="1700.00" ybr="1924.90" z_order="0">
+      <attribute name="Printed Text">Как видно из заполненной Манскэ анкеты, она в 1919-20 г.г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.32" ytl="1932.44" xbr="1745.29" ybr="1992.81" z_order="0">
+      <attribute name="Printed Text">работала сестрой милосердия в белой армии. Предварительное след-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="125.29" ytl="1997.85" xbr="1767.93" ybr="2058.22" z_order="0">
+      <attribute name="Printed Text">ствие по делу не проводилось, обвинение ей не предъявлялось, сви-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="122.78" ytl="2060.73" xbr="942.84" ybr="2113.56" z_order="0">
+      <attribute name="Printed Text">детели по делу не допрашивались.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="121.01" ytl="2179.21" xbr="1801.38" ybr="2232.04" z_order="0">
+      <attribute name="Printed Text">лений, а также данных о ее участии в убийствах и иных насильствен-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="121.01" ytl="2239.59" xbr="1114.65" ybr="2297.40" z_order="0">
+      <attribute name="Printed Text">ных акциях против населения в деле нет.</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="410.66" ytl="1022.92" xbr="531.97" ybr="1073.87" z_order="0">
+      <attribute name="Date Printed Text">1891</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="607.57" ytl="864.28" xbr="1184.51" ybr="928.52" z_order="0">
+      <attribute name="Printed Text">Манскэ Евгения Львовна</attribute>
+    </box>
+  </image>
+  <image id="217" name="ГДАСБУ_ф5_оп1_спр8441_151.jpg" width="1746" height="2642">
+    <box label="printed_text" source="manual" occluded="0" xtl="181.32" ytl="594.54" xbr="383.03" ybr="636.34" z_order="0">
+      <attribute name="Printed Text">Освобожден</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="185.29" ytl="517.07" xbr="359.80" ybr="557.01" z_order="0">
+      <attribute name="Printed Text">Арестован</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="429.18" ytl="514.96" xbr="689.89" ybr="557.01" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="845.48" ytl="508.66" xbr="959.01" ybr="557.01" z_order="0">
+      <attribute name="Printed Text">19 г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="178.06" ytl="664.35" xbr="1661.98" ybr="708.14" z_order="0">
+      <attribute name="Printed Text">Содержался под стражей, в местах лишения свободы, на принудительном лечении (ненуж-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="173.20" ytl="713.00" xbr="465.12" ybr="747.06" z_order="0">
+      <attribute name="Printed Text">ное вычеркнуть):</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="610.20" ytl="776.25" xbr="1136.53" ybr="818.20" z_order="0">
+      <attribute name="Printed Text">лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="240.38" ytl="847.16" xbr="1196.90" ybr="891.31" z_order="0">
+      <attribute name="Printed Text">Находился в ссылке . . . . лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="238.20" ytl="901.46" xbr="1426.62" ybr="966.88" z_order="0">
+      <attribute name="Printed Text">Данные о репрессированном или его родственниках: нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="234.10" ytl="1117.49" xbr="875.82" ybr="1189.05" z_order="0">
+      <attribute name="Printed Text">На Манскэ Евгению Львовну</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="879.34" ytl="1184.36" xbr="1036.54" ybr="1220.72" z_order="0">
+      <attribute name="Printed Text">(ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="163.95" ytl="1227.27" xbr="1638.14" ybr="1285.65" z_order="0">
+      <attribute name="Printed Text">распространяется действие ст. 1 Закона Украины «О реабилитации жертв полити-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="161.52" ytl="1292.95" xbr="1621.11" ybr="1353.76" z_order="0">
+      <attribute name="Printed Text">ческих репрессий на Украине» от 17 апреля 1991 года ввиду отсутствия сово-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="161.52" ytl="1370.79" xbr="1643.01" ybr="1434.04" z_order="0">
+      <attribute name="Printed Text">купности доказательств, подтверждающих обоснованность при-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="168.68" ytl="1444.69" xbr="921.38" ybr="1505.66" z_order="0">
+      <attribute name="Printed Text">влечения ее к ответственности.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="247.09" ytl="1533.21" xbr="752.04" ybr="1576.00" z_order="0">
+      <attribute name="Printed Text">Сотрудник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="392.33" ytl="1577.22" xbr="600.19" ybr="1610.68" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="537.49" ytl="1627.82" xbr="899.60" ybr="1693.52" z_order="0">
+      <attribute name="Printed Text">Б.В. Чернецкий,</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="427.32" ytl="570.68" xbr="1442.83" ybr="629.55" z_order="0">
+      <attribute name="Printed Text">сведений об исполнении постановления нет</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="227.30" ytl="2454.94" xbr="363.58" ybr="2504.00" z_order="0">
+      <attribute name="Printed Text">Подпись</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="147.34" ytl="2295.03" xbr="336.33" ybr="2342.28" z_order="0">
+      <attribute name="Printed Text">по адресу:</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="702.78" ytl="2262.25" xbr="1082.88" ybr="2299.91" z_order="0">
+      <attribute name="Printed Text">(степень родства, ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1272.93" ytl="2150.80" xbr="1643.65" ybr="2196.55" z_order="0">
+      <attribute name="Printed Text">1991 года направлена</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1122.36" ytl="2109.89" xbr="1408.92" ybr="2146.70" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="164.06" ytl="2057.53" xbr="1208.92" ybr="2113.86" z_order="0">
+      <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации не выдавалась</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="1022.86" ytl="1927.70" xbr="1642.40" ybr="2016.89" z_order="0">
+      <attribute name="Date Written Text">8 декабря 1995 года</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="208.20" ytl="1939.80" xbr="754.71" ybr="2012.80" z_order="0">
+      <attribute name="Date Written Text">4 декабря 1995 года</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1347.40" ytl="1822.02" xbr="1628.70" ybr="1880.73" z_order="0">
+      <attribute name="Printed Text">П.Г. Кушнир</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="1179.40" ytl="1731.28" xbr="1558.36" ybr="1883.91" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="315.40" ytl="1771.87" xbr="622.77" ybr="1958.40" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="345.90" ytl="1598.25" xbr="527.70" ybr="1706.18" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="98.37" ytl="1631.09" xbr="329.48" ybr="1685.06" z_order="0">
+      <attribute name="Printed Text">лейтенант</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="88.98" ytl="1822.32" xbr="336.52" ybr="1866.90" z_order="0">
+      <attribute name="Printed Text">полковник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="586.40" ytl="1823.49" xbr="840.97" ybr="1873.90" z_order="0">
+      <attribute name="Printed Text">Б.А. Выжак</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="393.09" ytl="1753.68" xbr="600.95" ybr="1787.14" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="248.30" ytl="1715.21" xbr="751.58" ybr="1755.21" z_order="0">
+      <attribute name="Printed Text">Начальник Реабилитационного</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="419.20" ytl="1713.18" xbr="445.80" ybr="1754.90" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="132.38" ytl="1697.86" xbr="253.04" ybr="1772.89" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1150.40" ytl="1571.61" xbr="1176.99" ybr="1601.60" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="852.66" ytl="1522.46" xbr="973.32" ybr="1597.50" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1175.09" ytl="1699.90" xbr="1460.01" ybr="1736.40" z_order="0">
+      <attribute name="Printed Text">юстиции 3 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1115.27" ytl="1664.41" xbr="1522.87" ybr="1698.89" z_order="0">
+      <attribute name="Printed Text">Государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1042.26" ytl="1628.93" xbr="1593.85" ybr="1665.43" z_order="0">
+      <attribute name="Printed Text">Генеральной прокуратуры Украины.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="982.44" ytl="1592.40" xbr="1651.64" ybr="1628.93" z_order="0">
+      <attribute name="Printed Text">дением законов о национальной безопасности</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="991.57" ytl="1550.85" xbr="1645.56" ybr="1593.44" z_order="0">
+      <attribute name="Printed Text">Начальника управления по надзору за соблю-</attribute>
+    </box>
+  </image>
+  <image id="218" name="ГДАСБУ_ф5_оп1_спр8441_152.jpg" width="1837" height="2732">
+    <box label="printed_text" source="manual" occluded="0" xtl="263.53" ytl="2168.25" xbr="1765.12" ybr="2230.82" z_order="0">
+      <attribute name="Printed Text">Предварительное следствие по делу не проводилось, обвинение</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="121.71" ytl="2230.82" xbr="1785.97" ybr="2299.64" z_order="0">
+      <attribute name="Printed Text">Рубцову Д.Ф. не предьявлялось, свидетети по делу не допрашивались.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="120.75" ytl="1911.11" xbr="1791.79" ybr="1986.56" z_order="0">
+      <attribute name="Printed Text">был мобилизирован в белую армию и служил в ней рядовым козаком. Све-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1075.92" ytl="211.04" xbr="1318.74" ybr="250.34" z_order="0">
+      <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1660.99" ytl="15.79" xbr="1738.09" ybr="93.93" z_order="0">
+      <attribute name="Contented Text">86</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="407.31" ytl="1021.25" xbr="532.60" ybr="1076.53" z_order="0">
+      <attribute name="Date Printed Text">1887</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="779.30" ytl="752.40" xbr="1067.17" ybr="792.49" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="561.54" ytl="863.79" xbr="1185.79" ybr="937.05" z_order="0">
+      <attribute name="Printed Text">Рубцов Дмитрий Федорович</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="143.62" ytl="1266.95" xbr="756.98" ybr="1313.08" z_order="0">
+      <attribute name="Printed Text">Место работы и должность до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="781.90" ytl="1249.55" xbr="1058.29" ybr="1301.14" z_order="0">
+      <attribute name="Printed Text">хлебопашец</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="140.18" ytl="1415.15" xbr="620.38" ybr="1463.38" z_order="0">
+      <attribute name="Printed Text">Место жительства до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="631.77" ytl="1400.94" xbr="1028.30" ybr="1458.27" z_order="0">
+      <attribute name="Printed Text">г. Симферополь.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="137.62" ytl="1551.16" xbr="1635.59" ybr="1607.69" z_order="0">
+      <attribute name="Printed Text">Когда, каким органом, по каким статьям УК, был осужден (репрессирован), в чем признан</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="139.39" ytl="1624.07" xbr="1791.69" ybr="1682.77" z_order="0">
+      <attribute name="Printed Text">виновным, изменялось ли решение по делу и как: 22 декабря 1920 года Чрезвычайной</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.75" ytl="1675.71" xbr="1796.02" ybr="1738.60" z_order="0">
+      <attribute name="Printed Text">тройкой Крымской ударной группы Упрособотделов Южного и Юго-Запад-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="123.16" ytl="1743.85" xbr="1718.00" ybr="1801.74" z_order="0">
+      <attribute name="Printed Text">ного фронтов вынесено постановление о расстреле Рубцова Д.Ф. за</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="132.48" ytl="1806.96" xbr="1289.62" ybr="1864.79" z_order="0">
+      <attribute name="Printed Text">службу у белых. Решение по делу не изменялось.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="281.75" ytl="1855.50" xbr="1762.90" ybr="1918.39" z_order="0">
+      <attribute name="Printed Text">Как видно из заполненной Рубцовым анкеты, он в 1919-20 г.г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="307.44" ytl="702.80" xbr="525.45" ybr="750.96" z_order="0">
+      <attribute name="Printed Text">в отношении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="631.36" ytl="610.47" xbr="1122.80" ybr="670.10" z_order="0">
+      <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="1231.27" ytl="514.55" xbr="1595.27" ybr="570.70" z_order="0">
+      <attribute name="Date Printed Text">декабря 1995г.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1053.60" ytl="502.23" xbr="1621.02" ybr="572.42" z_order="0">
+      <attribute name="Contented Text">14 декабря 1995г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1271.73" ytl="433.52" xbr="1622.65" ybr="488.24" z_order="0">
+      <attribute name="Printed Text">В.П.Даниленко.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="833.53" ytl="363.64" xbr="1346.90" ybr="479.25" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1026.29" ytl="351.76" xbr="1386.68" ybr="402.91" z_order="0">
+      <attribute name="Printed Text">юстиции 2 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="986.71" ytl="323.11" xbr="1404.24" ybr="359.99" z_order="0">
+      <attribute name="Printed Text">государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="581.26" ytl="256.60" xbr="1461.50" ybr="313.64" z_order="0">
+      <attribute name="Printed Text">Первый зам. Генеральный прокурор Украины</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="565.77" ytl="688.12" xbr="873.48" ybr="752.61" z_order="0">
+      <attribute name="Printed Text">Рубцова Д.Ф.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="143.70" ytl="1109.59" xbr="422.52" ybr="1156.58" z_order="0">
+      <attribute name="Printed Text">Место рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="140.39" ytl="1039.69" xbr="381.61" ybr="1082.76" z_order="0">
+      <attribute name="Printed Text">Год рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="143.11" ytl="884.50" xbr="559.46" ybr="932.08" z_order="0">
+      <attribute name="Printed Text">Фамилия, имя и отчество</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="467.78" ytl="790.87" xbr="1292.14" ybr="851.53" z_order="0">
+      <attribute name="Printed Text">по материалам уголовного дела (арх. №. 8441)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="460.01" ytl="1096.24" xbr="771.40" ybr="1158.89" z_order="0">
+      <attribute name="Printed Text">Донская Обл.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="115.46" ytl="1986.81" xbr="1690.04" ybr="2051.50" z_order="0">
+      <attribute name="Printed Text">дений о совершении им контрреволюционных преступлений, а также</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="115.46" ytl="2051.46" xbr="1667.10" ybr="2107.77" z_order="0">
+      <attribute name="Printed Text">данных о его участии в убийствах и иных насильственных акциях</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="115.46" ytl="2111.94" xbr="845.39" ybr="2161.99" z_order="0">
+      <attribute name="Printed Text">против населения в деле нет.</attribute>
+    </box>
+  </image>
+  <image id="219" name="ГДАСБУ_ф5_оп1_спр8441_153.jpg" width="1769" height="2642">
+    <box label="printed_text" source="manual" occluded="0" xtl="535.35" ytl="1652.68" xbr="897.46" ybr="1718.38" z_order="0">
+      <attribute name="Printed Text">Б.В. Чернецкий.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="216.56" ytl="1776.83" xbr="658.78" ybr="1989.93" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="335.13" ytl="1634.23" xbr="548.23" ybr="1746.39" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="1137.85" ytl="1747.99" xbr="1612.12" ybr="1874.57" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1192.42" ytl="1726.56" xbr="1477.34" ybr="1763.06" z_order="0">
+      <attribute name="Printed Text">юстиции 3 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1126.27" ytl="1692.33" xbr="1533.87" ybr="1726.80" z_order="0">
+      <attribute name="Printed Text">Государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1054.28" ytl="1654.46" xbr="1605.86" ybr="1690.96" z_order="0">
+      <attribute name="Printed Text">Генеральной прокуратуры Украины.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1165.83" ytl="1597.40" xbr="1194.77" ybr="1629.81" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="428.98" ytl="1752.54" xbr="458.55" ybr="1788.69" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="996.38" ytl="1620.33" xbr="1665.58" ybr="1656.85" z_order="0">
+      <attribute name="Printed Text">дением законов о национальной безопасности</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1010.64" ytl="1581.68" xbr="1664.63" ybr="1624.26" z_order="0">
+      <attribute name="Printed Text">Начальника управления по надзору за соблю-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="88.84" ytl="1856.06" xbr="340.25" ybr="1900.42" z_order="0">
+      <attribute name="Printed Text">полковник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="100.34" ytl="1667.09" xbr="333.67" ybr="1716.39" z_order="0">
+      <attribute name="Printed Text">лейтенант</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="886.24" ytl="1549.02" xbr="1006.90" ybr="1624.05" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="151.75" ytl="1728.13" xbr="272.40" ybr="1803.16" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="269.02" ytl="1742.14" xbr="773.97" ybr="1784.93" z_order="0">
+      <attribute name="Printed Text">Начальник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="265.65" ytl="1565.45" xbr="770.59" ybr="1608.25" z_order="0">
+      <attribute name="Printed Text">Сотрудник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="191.74" ytl="1476.83" xbr="968.80" ybr="1537.80" z_order="0">
+      <attribute name="Printed Text">влечения ее к ответственности.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="181.19" ytl="1400.74" xbr="1662.68" ybr="1463.98" z_order="0">
+      <attribute name="Printed Text">купности доказательств, подтверждающих обоснованность при-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="183.43" ytl="1325.25" xbr="1643.02" ybr="1386.07" z_order="0">
+      <attribute name="Printed Text">ческих репрессий на Украине» от 17 апреля 1991 года ввиду отсутствия сово-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="179.61" ytl="1256.75" xbr="1653.80" ybr="1315.13" z_order="0">
+      <attribute name="Printed Text">распространяется действие ст. 1 Закона Украины «О реабилитации жертв полити-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="257.32" ytl="1157.81" xbr="1005.12" ybr="1222.30" z_order="0">
+      <attribute name="Printed Text">На Рубцова Дмитрия Федоровича</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="893.33" ytl="1211.02" xbr="1050.53" ybr="1247.39" z_order="0">
+      <attribute name="Printed Text">(ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="260.11" ytl="928.79" xbr="1448.52" ybr="994.21" z_order="0">
+      <attribute name="Printed Text">Данные о репрессированном или его родственниках: нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="263.07" ytl="880.67" xbr="1219.59" ybr="924.82" z_order="0">
+      <attribute name="Printed Text">Находился в ссылке . . . . лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="627.31" ytl="806.45" xbr="1153.64" ybr="848.39" z_order="0">
+      <attribute name="Printed Text">лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="188.60" ytl="742.60" xbr="480.52" ybr="781.19" z_order="0">
+      <attribute name="Printed Text">ное вычеркнуть):</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="866.31" ytl="539.70" xbr="985.33" ybr="584.89" z_order="0">
+      <attribute name="Printed Text">19 г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="189.19" ytl="694.04" xbr="1673.11" ybr="737.83" z_order="0">
+      <attribute name="Printed Text">Содержался под стражей, в местах лишения свободы, на принудительном лечении (ненуж-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="432.35" ytl="613.40" xbr="1447.86" ybr="672.27" z_order="0">
+      <attribute name="Printed Text">сведений об исполнении постановления нет</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1169.49" ytl="931.97" xbr="1430.20" ybr="984.60" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="458.23" ytl="541.65" xbr="718.94" ybr="583.70" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="195.46" ytl="629.40" xbr="400.27" ybr="666.53" z_order="0">
+      <attribute name="Printed Text">Освобожден</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="411.84" ytl="1783.76" xbr="619.69" ybr="1817.22" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="413.22" ytl="1607.89" xbr="621.08" ybr="1641.35" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="202.73" ytl="555.45" xbr="377.23" ybr="595.40" z_order="0">
+      <attribute name="Printed Text">Арестован</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="246.26" ytl="2487.75" xbr="382.55" ybr="2536.81" z_order="0">
+      <attribute name="Printed Text">Подпись</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="168.14" ytl="2327.94" xbr="357.12" ybr="2375.18" z_order="0">
+      <attribute name="Printed Text">по адресу:</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="723.29" ytl="2290.53" xbr="1103.39" ybr="2328.18" z_order="0">
+      <attribute name="Printed Text">(степень родства, ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1289.62" ytl="2177.62" xbr="1660.34" ybr="2223.38" z_order="0">
+      <attribute name="Printed Text">1991 года направлена</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1136.03" ytl="2135.35" xbr="1422.58" ybr="2172.16" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="190.39" ytl="2083.31" xbr="1235.25" ybr="2139.64" z_order="0">
+      <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации не выдавалась</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="1008.37" ytl="1958.01" xbr="1646.20" ybr="2063.10" z_order="0">
+      <attribute name="Date Written Text">8 декабря 1995 года</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="223.26" ytl="1970.83" xbr="769.77" ybr="2043.83" z_order="0">
+      <attribute name="Date Written Text">5 декабря 1995 года</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="637.59" ytl="1846.84" xbr="892.35" ybr="1904.52" z_order="0">
+      <attribute name="Printed Text">Б.А. Выжак.</attribute>
+    </box>
+  </image>
+  <image id="220" name="ГДАСБУ_ф5_оп1_спр8441_154.jpg" width="1836" height="2732">
+    <box label="printed_text" source="manual" occluded="0" xtl="136.00" ytl="1108.46" xbr="414.81" ybr="1155.45" z_order="0">
+      <attribute name="Printed Text">Место рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1069.27" ytl="208.84" xbr="1312.09" ybr="248.15" z_order="0">
+      <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1658.19" ytl="12.00" xbr="1729.56" ybr="97.60" z_order="0">
+      <attribute name="Contented Text">87</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="597.96" ytl="256.59" xbr="1450.70" ybr="313.64" z_order="0">
+      <attribute name="Printed Text">Первый зам. Генеральный прокурор Украины</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="977.26" ytl="320.36" xbr="1394.80" ybr="357.24" z_order="0">
+      <attribute name="Printed Text">государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1015.68" ytl="349.32" xbr="1376.07" ybr="400.47" z_order="0">
+      <attribute name="Printed Text">юстиции 2 класса</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="792.93" ytl="358.97" xbr="1372.59" ybr="494.30" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1267.25" ytl="423.97" xbr="1618.17" ybr="478.69" z_order="0">
+      <attribute name="Printed Text">В.П.Даниленко.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1042.75" ytl="492.68" xbr="1610.17" ybr="562.86" z_order="0">
+      <attribute name="Contented Text">14 декабря 1995г.</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="1198.52" ytl="510.87" xbr="1592.00" ybr="559.64" z_order="0">
+      <attribute name="Date Printed Text">декабря 1995г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="628.10" ytl="606.78" xbr="1119.54" ybr="666.41" z_order="0">
+      <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="301.59" ytl="695.83" xbr="519.60" ybr="751.35" z_order="0">
+      <attribute name="Printed Text">в отношении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="555.49" ytl="679.06" xbr="918.57" ybr="742.76" z_order="0">
+      <attribute name="Printed Text">Субботина Н.П.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="561.86" ytl="863.79" xbr="1200.40" ybr="932.27" z_order="0">
+      <attribute name="Printed Text">Субботин Николай Павлович</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="769.05" ytl="750.52" xbr="1056.92" ybr="790.62" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="382.04" ytl="1013.51" xbr="505.69" ybr="1068.94" z_order="0">
+      <attribute name="Date Printed Text">1863</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="459.12" ytl="789.51" xbr="1283.49" ybr="850.18" z_order="0">
+      <attribute name="Printed Text">по материалам уголовного дела (арх. №. 8441)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="136.16" ytl="878.97" xbr="552.51" ybr="926.55" z_order="0">
+      <attribute name="Printed Text">Фамилия, имя и отчество</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="126.07" ytl="1036.00" xbr="367.29" ybr="1079.08" z_order="0">
+      <attribute name="Printed Text">Год рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="432.00" ytl="1087.77" xbr="817.10" ybr="1150.42" z_order="0">
+      <attribute name="Printed Text">Ялтинский уезд.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="134.83" ytl="1261.42" xbr="753.70" ybr="1307.55" z_order="0">
+      <attribute name="Printed Text">Место работы и должность до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="760.34" ytl="1253.23" xbr="1195.19" ybr="1306.66" z_order="0">
+      <attribute name="Printed Text">инженер-строитель</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="136.92" ytl="1409.62" xbr="617.12" ybr="1457.85" z_order="0">
+      <attribute name="Printed Text">Место жительства до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="656.73" ytl="1395.89" xbr="871.67" ybr="1447.26" z_order="0">
+      <attribute name="Printed Text">г. Ялта.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="126.02" ytl="1546.22" xbr="1623.98" ybr="1602.75" z_order="0">
+      <attribute name="Printed Text">Когда, каким органом, по каким статьям УК, был осужден (репрессирован), в чем признан</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="142.58" ytl="1621.60" xbr="1794.88" ybr="1680.31" z_order="0">
+      <attribute name="Printed Text">виновным, изменялось ли решение по делу и как: 22 декабря 1920 года Чрезвычайной</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="131.67" ytl="1678.56" xbr="1796.95" ybr="1741.45" z_order="0">
+      <attribute name="Printed Text">тройкой Крымской ударной группы Упрособотделов Южного и Юго-Запад-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="129.79" ytl="1741.00" xbr="1767.40" ybr="1798.89" z_order="0">
+      <attribute name="Printed Text">ного фронтов вынесено постановление о расстреле Субботина Н.П. за</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="135.68" ytl="1809.42" xbr="1292.82" ybr="1867.26" z_order="0">
+      <attribute name="Printed Text">службу у белых. Решение по делу не изменялось.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="265.55" ytl="1860.04" xbr="1722.03" ybr="1922.93" z_order="0">
+      <attribute name="Printed Text">Как видно из заполненной Субботиным анкеты, он в белой ар-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.50" ytl="1930.88" xbr="1699.26" ybr="1985.15" z_order="0">
+      <attribute name="Printed Text">мии не служил. Доказательств совершения им контрреволюционных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="132.77" ytl="1990.98" xbr="1371.57" ybr="2053.55" z_order="0">
+      <attribute name="Printed Text">и иных преступных действий в материалах дела нет.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="245.38" ytl="2055.63" xbr="1755.31" ybr="2107.77" z_order="0">
+      <attribute name="Printed Text">Предварительное дело по делу не проодилось, обвинение Суб-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.68" ytl="2114.03" xbr="1765.74" ybr="2178.68" z_order="0">
+      <attribute name="Printed Text">ботину Н.П. не предьявлялось, свидетели по делу не допрашивались.</attribute>
+    </box>
+  </image>
+  <image id="221" name="ГДАСБУ_ф5_оп1_спр8441_155.jpg" width="1769" height="2641">
+    <box label="printed_text" source="manual" occluded="0" xtl="852.78" ytl="523.73" xbr="959.71" ybr="571.92" z_order="0">
+      <attribute name="Printed Text">19 г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="181.65" ytl="683.98" xbr="1665.56" ybr="727.77" z_order="0">
+      <attribute name="Printed Text">Содержался под стражей, в местах лишения свободы, на принудительном лечении (ненуж-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="420.28" ytl="591.32" xbr="1435.79" ybr="650.19" z_order="0">
+      <attribute name="Printed Text">сведений об исполнении постановления нет</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="181.45" ytl="612.86" xbr="383.93" ybr="654.48" z_order="0">
+      <attribute name="Printed Text">Освобожден</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="236.43" ytl="2477.14" xbr="372.72" ybr="2526.21" z_order="0">
+      <attribute name="Printed Text">Подпись</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="157.56" ytl="2314.30" xbr="346.55" ybr="2361.55" z_order="0">
+      <attribute name="Printed Text">по адресу:</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="713.93" ytl="2280.64" xbr="1094.03" ybr="2318.30" z_order="0">
+      <attribute name="Printed Text">(степень родства, ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1277.38" ytl="2165.11" xbr="1648.10" ybr="2210.86" z_order="0">
+      <attribute name="Printed Text">1991 года направлена</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1123.86" ytl="2124.85" xbr="1410.42" ybr="2161.66" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="168.03" ytl="2080.11" xbr="1212.89" ybr="2136.44" z_order="0">
+      <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации не выдавалась</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="1016.22" ytl="1942.04" xbr="1650.80" ybr="2037.50" z_order="0">
+      <attribute name="Date Written Text">8 декабря 1995 года</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="208.99" ytl="1961.26" xbr="755.51" ybr="2034.26" z_order="0">
+      <attribute name="Date Written Text">5 декабря 1995 года</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="604.28" ytl="1835.94" xbr="859.04" ybr="1893.62" z_order="0">
+      <attribute name="Printed Text">Б.А. Выжак.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="504.99" ytl="1652.80" xbr="865.50" ybr="1712.13" z_order="0">
+      <attribute name="Printed Text">Б.В. Чернецкий.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="203.98" ytl="1764.14" xbr="628.41" ybr="1975.56" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="292.07" ytl="1610.38" xbr="545.13" ybr="1730.51" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="1155.36" ytl="1727.31" xbr="1608.62" ybr="1917.90" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1181.04" ytl="1720.30" xbr="1465.95" ybr="1756.80" z_order="0">
+      <attribute name="Printed Text">юстиции 3 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1121.30" ytl="1682.87" xbr="1528.90" ybr="1717.35" z_order="0">
+      <attribute name="Printed Text">Государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1046.11" ytl="1643.42" xbr="1597.69" ybr="1679.92" z_order="0">
+      <attribute name="Printed Text">Генеральной прокуратуры Украины.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="425.93" ytl="1735.32" xbr="457.35" ybr="1773.72" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1153.32" ytl="1585.94" xbr="1179.77" ybr="1620.58" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="984.24" ytl="1608.40" xbr="1653.44" ybr="1644.93" z_order="0">
+      <attribute name="Printed Text">дением законов о национальной безопасности</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="995.69" ytl="1565.47" xbr="1649.68" ybr="1608.05" z_order="0">
+      <attribute name="Printed Text">Начальника управления по надзору за соблю-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="35.01" ytl="1834.73" xbr="276.46" ybr="1882.37" z_order="0">
+      <attribute name="Printed Text">полковник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="400.42" ytl="1594.41" xbr="608.27" ybr="1627.87" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="395.06" ytl="1772.26" xbr="602.91" ybr="1805.72" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="33.36" ytl="1658.98" xbr="278.10" ybr="1711.54" z_order="0">
+      <attribute name="Printed Text">лейтенант</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="143.79" ytl="1716.78" xbr="264.45" ybr="1791.81" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="853.36" ytl="1537.75" xbr="974.02" ybr="1612.78" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="254.79" ytl="1731.40" xbr="759.74" ybr="1774.20" z_order="0">
+      <attribute name="Printed Text">Начальник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="248.38" ytl="1550.85" xbr="753.32" ybr="1593.64" z_order="0">
+      <attribute name="Printed Text">Сотрудник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="190.12" ytl="1454.48" xbr="972.40" ybr="1515.45" z_order="0">
+      <attribute name="Printed Text">влечения ее к ответственности.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="417.79" ytl="524.31" xbr="678.50" ybr="566.36" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1180.49" ytl="937.16" xbr="1441.20" ybr="979.21" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="184.82" ytl="536.36" xbr="354.69" ybr="579.11" z_order="0">
+      <attribute name="Printed Text">Арестован</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="175.95" ytl="1390.61" xbr="1657.44" ybr="1453.86" z_order="0">
+      <attribute name="Printed Text">купности доказательств, подтверждающих обоснованность при-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="164.25" ytl="1311.68" xbr="1648.20" ybr="1372.49" z_order="0">
+      <attribute name="Printed Text">ческих репрессий на Украине» от 17 апреля 1991 года ввиду отсутствия сово-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="170.89" ytl="1243.19" xbr="1645.08" ybr="1301.58" z_order="0">
+      <attribute name="Printed Text">распространяется действие ст. 1 Закона Украины «О реабилитации жертв полити-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="231.40" ytl="1147.76" xbr="1001.56" ybr="1200.03" z_order="0">
+      <attribute name="Printed Text">На Субботина Николая Павловича</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="875.87" ytl="1197.49" xbr="1033.08" ybr="1233.86" z_order="0">
+      <attribute name="Printed Text">(ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="242.05" ytl="921.65" xbr="1451.50" ybr="987.07" z_order="0">
+      <attribute name="Printed Text">Данные о репрессированном или его родственниках: нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="248.06" ytl="867.53" xbr="1204.58" ybr="911.68" z_order="0">
+      <attribute name="Printed Text">Находился в ссылке . . . . лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="613.75" ytl="793.33" xbr="1140.08" ybr="835.28" z_order="0">
+      <attribute name="Printed Text">лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="176.76" ytl="729.51" xbr="468.68" ybr="771.10" z_order="0">
+      <attribute name="Printed Text">ное вычеркнуть):</attribute>
+    </box>
+  </image>
+  <image id="222" name="ГДАСБУ_ф5_оп1_спр8441_156.jpg" width="1837" height="2732">
+    <box label="printed_text" source="manual" occluded="0" xtl="146.74" ytl="2057.72" xbr="1756.77" ybr="2111.94" z_order="0">
+      <attribute name="Printed Text">в убийствах и иных насильственных акциях против населения в деле</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="138.40" ytl="2305.90" xbr="257.27" ybr="2364.30" z_order="0">
+      <attribute name="Printed Text">лись.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="140.50" ytl="2229.70" xbr="1765.20" ybr="2298.52" z_order="0">
+      <attribute name="Printed Text">Алексееву Д.М. не предьявлялось, свидетети по делу не допрашива-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="259.42" ytl="2170.26" xbr="1761.01" ybr="2232.83" z_order="0">
+      <attribute name="Printed Text">Предварительное следствие по делу не проводилось, обвинение</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="142.57" ytl="2118.20" xbr="255.19" ybr="2170.34" z_order="0">
+      <attribute name="Printed Text">нет.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="144.65" ytl="1995.15" xbr="1760.90" ybr="2059.80" z_order="0">
+      <attribute name="Printed Text">им контрреполюционных преступлений, а также данных о его участии</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="148.82" ytl="1930.50" xbr="1735.92" ybr="1990.98" z_order="0">
+      <attribute name="Printed Text">служил гарнизонным писарем в белой армии. Сведений о совершении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="294.42" ytl="1864.97" xbr="1824.90" ybr="1927.86" z_order="0">
+      <attribute name="Printed Text">Как видно из заполненной Алексеевым анкеты, он в 1919-20 г.г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="137.41" ytl="1806.96" xbr="1385.80" ybr="1864.79" z_order="0">
+      <attribute name="Printed Text">службу у белых. Решение по делу не изменялось.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="131.72" ytl="1741.00" xbr="1826.40" ybr="1798.89" z_order="0">
+      <attribute name="Printed Text">Западного фронтов вынесено постановление о расстреле Алексеева Д.М. за</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.75" ytl="1678.56" xbr="1727.50" ybr="1741.45" z_order="0">
+      <attribute name="Printed Text">ной тройкой Крымской ударной группы Упрособотделов Южного и Юго-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="136.92" ytl="1621.60" xbr="1789.22" ybr="1680.31" z_order="0">
+      <attribute name="Printed Text">виновным, изменялось ли решение по делу и как: 22 декабря 1920 года Чрезвычай-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="135.15" ytl="1551.16" xbr="1633.12" ybr="1607.69" z_order="0">
+      <attribute name="Printed Text">Когда, каким органом, по каким статьям УК, был осужден (репрессирован), в чем признан</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="650.06" ytl="1403.85" xbr="865.00" ybr="1455.22" z_order="0">
+      <attribute name="Printed Text">г. Ялта.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="143.87" ytl="1416.99" xbr="624.07" ybr="1465.22" z_order="0">
+      <attribute name="Printed Text">Место жительства до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="147.31" ytl="1268.79" xbr="760.66" ybr="1314.92" z_order="0">
+      <attribute name="Printed Text">Место работы и должность до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="468.67" ytl="1098.46" xbr="944.05" ybr="1161.10" z_order="0">
+      <attribute name="Printed Text">Петроградская губ.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="141.38" ytl="1111.74" xbr="420.19" ybr="1158.74" z_order="0">
+      <attribute name="Printed Text">Место рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="138.54" ytl="1037.84" xbr="379.77" ybr="1080.92" z_order="0">
+      <attribute name="Printed Text">Год рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="141.27" ytl="884.50" xbr="557.61" ybr="932.08" z_order="0">
+      <attribute name="Printed Text">Фамилия, имя и отчество</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="469.76" ytl="789.51" xbr="1294.12" ybr="850.18" z_order="0">
+      <attribute name="Printed Text">по материалам уголовного дела (арх. №. 8441)</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="392.28" ytl="1022.04" xbr="526.59" ybr="1077.47" z_order="0">
+      <attribute name="Date Printed Text">1871</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="777.01" ytl="752.65" xbr="1064.88" ybr="794.90" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="598.94" ytl="857.26" xbr="1265.94" ybr="923.60" z_order="0">
+      <attribute name="Printed Text">Алексеев Леонид Михайлович</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="549.19" ytl="684.06" xbr="915.86" ybr="746.71" z_order="0">
+      <attribute name="Printed Text">Алексеева Л.М.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="309.36" ytl="704.15" xbr="527.38" ybr="759.67" z_order="0">
+      <attribute name="Printed Text">в отношении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="631.36" ytl="608.60" xbr="1122.80" ybr="671.94" z_order="0">
+      <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="1240.48" ytl="505.30" xbr="1604.48" ybr="567.01" z_order="0">
+      <attribute name="Date Printed Text">декабря 1995г.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1055.19" ytl="500.64" xbr="1622.61" ybr="570.82" z_order="0">
+      <attribute name="Contented Text">14 декабря 1995г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1290.84" ytl="436.71" xbr="1641.76" ybr="491.43" z_order="0">
+      <attribute name="Printed Text">В.П.Даниленко.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="787.83" ytl="366.94" xbr="1394.57" ybr="502.30" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1024.94" ytl="341.33" xbr="1385.33" ybr="410.03" z_order="0">
+      <attribute name="Printed Text">юстиции 2 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="985.33" ytl="324.49" xbr="1402.87" ybr="361.36" z_order="0">
+      <attribute name="Printed Text">государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="644.57" ytl="264.85" xbr="1464.20" ybr="321.90" z_order="0">
+      <attribute name="Printed Text">Первый зам. Генеральный прокурор Украины</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1668.77" ytl="9.57" xbr="1735.39" ybr="85.70" z_order="0">
+      <attribute name="Contented Text">88</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1078.69" ytl="213.60" xbr="1321.51" ybr="252.90" z_order="0">
+      <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
+    </box>
+  </image>
+  <image id="223" name="ГДАСБУ_ф5_оп1_спр8441_157.jpg" width="1769" height="2642">
+    <box label="printed_text" source="manual" occluded="0" xtl="489.60" ytl="586.28" xbr="1505.11" ybr="645.15" z_order="0">
+      <attribute name="Printed Text">сведений об исполнении постановления нет</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="214.80" ytl="688.02" xbr="1698.72" ybr="731.81" z_order="0">
+      <attribute name="Printed Text">Содержался под стражей, в местах лишения свободы, на принудительном лечении (ненуж-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="215.72" ytl="732.05" xbr="507.64" ybr="773.59" z_order="0">
+      <attribute name="Printed Text">ное вычеркнуть):</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="649.91" ytl="797.41" xbr="1176.24" ybr="839.36" z_order="0">
+      <attribute name="Printed Text">лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="279.64" ytl="871.63" xbr="1236.16" ybr="915.79" z_order="0">
+      <attribute name="Printed Text">Находился в ссылке . . . . лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="261.62" ytl="918.25" xbr="1450.03" ybr="983.67" z_order="0">
+      <attribute name="Printed Text">Данные о репрессированном или его родственниках: нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="910.76" ytl="1202.31" xbr="1067.97" ybr="1238.68" z_order="0">
+      <attribute name="Printed Text">(ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="269.52" ytl="1138.64" xbr="1083.56" ybr="1206.62" z_order="0">
+      <attribute name="Printed Text">На Алексеева Леонида Михайловича</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="190.07" ytl="1253.26" xbr="1664.26" ybr="1311.64" z_order="0">
+      <attribute name="Printed Text">распространяется действие ст. 1 Закона Украины «О реабилитации жертв полити-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="200.86" ytl="1321.77" xbr="1660.45" ybr="1382.58" z_order="0">
+      <attribute name="Printed Text">ческих репрессий на Украине» от 17 апреля 1991 года ввиду отсутствия сово-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="200.37" ytl="1385.05" xbr="1681.85" ybr="1448.30" z_order="0">
+      <attribute name="Printed Text">купности доказательств, подтверждающих обоснованность при-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="195.23" ytl="1462.88" xbr="974.10" ybr="1523.86" z_order="0">
+      <attribute name="Printed Text">влечения ее к ответственности.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="282.15" ytl="1555.16" xbr="787.10" ybr="1597.96" z_order="0">
+      <attribute name="Printed Text">Сотрудник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="277.40" ytl="1733.52" xbr="782.34" ybr="1776.32" z_order="0">
+      <attribute name="Printed Text">Начальник Реабилитационного</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="901.03" ytl="1540.81" xbr="1021.68" ybr="1615.84" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="174.70" ytl="1716.62" xbr="300.34" ybr="1791.66" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="100.34" ytl="1652.31" xbr="336.96" ybr="1708.17" z_order="0">
+      <attribute name="Printed Text">лейтенант</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="92.13" ytl="1839.63" xbr="338.60" ybr="1883.99" z_order="0">
+      <attribute name="Printed Text">полковник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1025.43" ytl="1571.82" xbr="1679.42" ybr="1614.40" z_order="0">
+      <attribute name="Printed Text">Начальника управления по надзору за соблю-</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="450.34" ytl="1739.39" xbr="489.77" ybr="1773.90" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1184.83" ytl="1596.44" xbr="1207.83" ybr="1627.66" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1068.70" ytl="1651.26" xbr="1620.28" ybr="1687.76" z_order="0">
+      <attribute name="Printed Text">Генеральной прокуратуры Украины.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1014.70" ytl="1614.39" xbr="1683.90" ybr="1650.92" z_order="0">
+      <attribute name="Printed Text">дением законов о национальной безопасности</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1147.10" ytl="1685.92" xbr="1554.70" ybr="1720.39" z_order="0">
+      <attribute name="Printed Text">Государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1205.24" ytl="1726.56" xbr="1490.15" ybr="1763.06" z_order="0">
+      <attribute name="Printed Text">юстиции 3 класса</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="1084.98" ytl="1764.02" xbr="1472.73" ybr="1897.00" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="347.94" ytl="1616.61" xbr="581.87" ybr="1752.80" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="243.80" ytl="1762.41" xbr="687.62" ybr="1967.50" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="564.99" ytl="1647.85" xbr="925.51" ybr="1707.18" z_order="0">
+      <attribute name="Printed Text">Б.В. Чернецкий.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="639.44" ytl="1839.43" xbr="894.20" ybr="1897.11" z_order="0">
+      <attribute name="Printed Text">Б.А. Выжак.</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="226.47" ytl="1943.59" xbr="795.40" ybr="2037.40" z_order="0">
+      <attribute name="Date Written Text">5 декабря 1995 года</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="1045.22" ytl="1948.40" xbr="1676.60" ybr="2039.00" z_order="0">
+      <attribute name="Date Written Text">5 декабря 1995 года</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="198.40" ytl="2075.30" xbr="1243.26" ybr="2131.63" z_order="0">
+      <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации не выдавалась</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1150.72" ytl="2132.01" xbr="1437.28" ybr="2168.82" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1304.98" ytl="2172.28" xbr="1675.70" ybr="2218.03" z_order="0">
+      <attribute name="Printed Text">1991 года направлена</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="739.32" ytl="2283.85" xbr="1119.42" ybr="2321.51" z_order="0">
+      <attribute name="Printed Text">(степень родства, ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="182.82" ytl="2319.44" xbr="371.81" ybr="2366.68" z_order="0">
+      <attribute name="Printed Text">по адресу:</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="426.62" ytl="1776.53" xbr="634.47" ybr="1809.99" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="424.30" ytl="1595.72" xbr="632.16" ybr="1629.18" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="259.39" ytl="2476.16" xbr="395.68" ybr="2525.22" z_order="0">
+      <attribute name="Printed Text">Подпись</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="482.90" ytl="529.58" xbr="748.15" ybr="571.63" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1143.52" ytl="927.95" xbr="1404.23" ybr="971.10" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="219.37" ytl="542.69" xbr="388.17" ybr="579.82" z_order="0">
+      <attribute name="Printed Text">Арестован</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="219.37" ytl="615.83" xbr="416.31" ybr="658.60" z_order="0">
+      <attribute name="Printed Text">Освобожден</attribute>
+    </box>
+  </image>
+  <image id="224" name="ГДАСБУ_ф5_оп1_спр8441_158.jpg" width="1836" height="2732">
+    <box label="printed_text" source="manual" occluded="0" xtl="1066.89" ytl="214.79" xbr="1309.71" ybr="254.09" z_order="0">
+      <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1674.84" ytl="10.76" xbr="1745.03" ybr="83.33" z_order="0">
+      <attribute name="Contented Text">89</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="570.44" ytl="255.22" xbr="1443.80" ybr="316.40" z_order="0">
+      <attribute name="Printed Text">Первый зам. Генеральный прокурор Украины</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="973.13" ytl="323.11" xbr="1390.67" ybr="359.99" z_order="0">
+      <attribute name="Printed Text">государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1012.49" ytl="349.30" xbr="1372.88" ybr="413.20" z_order="0">
+      <attribute name="Printed Text">юстиции 2 класса</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="845.48" ytl="360.57" xbr="1441.07" ybr="492.74" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1284.77" ytl="430.34" xbr="1635.69" ybr="485.06" z_order="0">
+      <attribute name="Printed Text">В.П.Даниленко.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1047.52" ytl="497.46" xbr="1589.46" ybr="567.64" z_order="0">
+      <attribute name="Contented Text">14 декабря 1995г.</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="1226.16" ytl="516.40" xbr="1590.17" ybr="567.01" z_order="0">
+      <attribute name="Date Printed Text">декабря 1995г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="618.89" ytl="612.31" xbr="1110.33" ybr="671.94" z_order="0">
+      <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="296.89" ytl="700.46" xbr="514.90" ybr="755.98" z_order="0">
+      <attribute name="Printed Text">в отношении</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="553.24" ytl="682.22" xbr="903.33" ybr="748.55" z_order="0">
+      <attribute name="Printed Text">Макарова С.Д.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="556.93" ytl="866.48" xbr="1236.83" ybr="943.86" z_order="0">
+      <attribute name="Printed Text">Макаров Стратон Дмитриевич</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="764.79" ytl="754.79" xbr="1052.66" ybr="794.88" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="date_printed" source="manual" occluded="0" xtl="388.44" ytl="1019.91" xbr="514.22" ybr="1075.34" z_order="0">
+      <attribute name="Date Printed Text">1892</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="457.28" ytl="791.36" xbr="1281.65" ybr="852.02" z_order="0">
+      <attribute name="Printed Text">по материалам уголовного дела (арх. №. 8441)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="125.11" ytl="888.18" xbr="541.45" ybr="935.77" z_order="0">
+      <attribute name="Printed Text">Фамилия, имя и отчество</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="127.91" ytl="1043.37" xbr="369.13" ybr="1086.45" z_order="0">
+      <attribute name="Printed Text">Год рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="128.90" ytl="1113.59" xbr="407.72" ybr="1160.58" z_order="0">
+      <attribute name="Printed Text">Место рождения</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="434.21" ytl="1098.46" xbr="754.82" ybr="1161.10" z_order="0">
+      <attribute name="Printed Text">Донская обл.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="129.30" ytl="1265.10" xbr="742.66" ybr="1316.77" z_order="0">
+      <attribute name="Printed Text">Место работы и должность до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="758.50" ytl="1249.55" xbr="1034.89" ybr="1306.67" z_order="0">
+      <attribute name="Printed Text">хлебопашец</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="125.86" ytl="1418.83" xbr="606.06" ybr="1467.06" z_order="0">
+      <attribute name="Printed Text">Место жительства до ареста</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="645.58" ytl="1407.03" xbr="860.52" ybr="1458.41" z_order="0">
+      <attribute name="Printed Text">г. Ялта.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="121.08" ytl="1553.63" xbr="1619.05" ybr="1610.15" z_order="0">
+      <attribute name="Printed Text">Когда, каким органом, по каким статьям УК, был осужден (репрессирован), в чем признан</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="126.75" ytl="1620.72" xbr="1779.05" ybr="1679.42" z_order="0">
+      <attribute name="Printed Text">виновным, изменялось ли решение по делу и как: 22 декабря 1920 года Чрезвычайной</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="128.82" ytl="1684.27" xbr="1794.10" ybr="1747.16" z_order="0">
+      <attribute name="Printed Text">тройкой Крымской ударной группы Упрособотделов Южного и Юго-Запад-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="125.05" ytl="1746.35" xbr="1759.90" ybr="1804.24" z_order="0">
+      <attribute name="Printed Text">ного фронтов вынесено постановление о расстреле Макарова С.Д. за</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="120.88" ytl="1809.42" xbr="1310.10" ybr="1867.26" z_order="0">
+      <attribute name="Printed Text">службу у белых. Решение по делу не изменялось.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="256.79" ytl="1862.49" xbr="1713.26" ybr="1925.38" z_order="0">
+      <attribute name="Printed Text">Как видно из заполненной Макаровым анкеты, он в 1920 г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="128.59" ytl="1926.33" xbr="1709.43" ybr="1993.06" z_order="0">
+      <attribute name="Printed Text">был мобилизирован в белую армию и служил в ней непродолжительное</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="132.77" ytl="1990.98" xbr="1730.29" ybr="2059.80" z_order="0">
+      <attribute name="Printed Text">время рядовым козаком. Сведений о совершении Макаровым контрре-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="130.68" ytl="2059.80" xbr="1797.02" ybr="2116.11" z_order="0">
+      <attribute name="Printed Text">волюционных преступлений, а также данных о его участии в убийствах</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="128.59" ytl="2126.54" xbr="1565.53" ybr="2182.85" z_order="0">
+      <attribute name="Printed Text">и иных насильственных акциях против населения в деле нет.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="259.97" ytl="2180.69" xbr="1761.55" ybr="2243.25" z_order="0">
+      <attribute name="Printed Text">Предварительное следствие по делу не проводилось, обвинение</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="126.49" ytl="2242.21" xbr="1571.80" ybr="2300.60" z_order="0">
+      <attribute name="Printed Text">ему не предьявлялось, свидетети по делу не допрашивались.</attribute>
+    </box>
+  </image>
+  <image id="225" name="ГДАСБУ_ф5_оп1_спр8441_159.jpg" width="1768" height="2642">
+    <box label="printed_text" source="manual" occluded="0" xtl="402.98" ytl="1770.49" xbr="610.84" ybr="1803.95" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="405.30" ytl="1594.32" xbr="613.15" ybr="1627.78" z_order="0">
+      <attribute name="Printed Text">отдела СБУ</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="421.10" ytl="523.95" xbr="715.60" ybr="566.00" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1162.71" ytl="918.95" xbr="1423.42" ybr="963.30" z_order="0">
+      <attribute name="Printed Text">нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="200.51" ytl="540.12" xbr="367.79" ybr="579.63" z_order="0">
+      <attribute name="Printed Text">Арестован</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="198.82" ytl="616.61" xbr="396.37" ybr="654.44" z_order="0">
+      <attribute name="Printed Text">Освобожден</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="429.59" ytl="584.78" xbr="1445.10" ybr="643.65" z_order="0">
+      <attribute name="Printed Text">сведений об исполнении постановления нет</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="186.43" ytl="678.98" xbr="1670.35" ybr="730.30" z_order="0">
+      <attribute name="Printed Text">Содержался под стражей, в местах лишения свободы, на принудительном лечении (ненуж-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="860.59" ytl="527.64" xbr="976.59" ybr="572.84" z_order="0">
+      <attribute name="Printed Text">19 г.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="193.38" ytl="729.04" xbr="485.29" ybr="770.60" z_order="0">
+      <attribute name="Printed Text">ное вычеркнуть):</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="627.56" ytl="791.38" xbr="1153.89" ybr="833.33" z_order="0">
+      <attribute name="Printed Text">лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="254.28" ytl="867.11" xbr="1210.80" ybr="911.26" z_order="0">
+      <attribute name="Printed Text">Находился в ссылке . . . . лет, . . . . месяцев, . . . . дней.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="252.83" ytl="919.76" xbr="1441.25" ybr="985.17" z_order="0">
+      <attribute name="Printed Text">Данные о репрессированном или его родственниках: нет данных</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="248.40" ytl="1136.16" xbr="1025.74" ybr="1201.26" z_order="0">
+      <attribute name="Printed Text">На Макарова Стратена Дмитриевича</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="885.47" ytl="1196.79" xbr="1042.67" ybr="1233.16" z_order="0">
+      <attribute name="Printed Text">(ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="181.73" ytl="1248.03" xbr="1655.92" ybr="1306.41" z_order="0">
+      <attribute name="Printed Text">распространяется действие ст. 1 Закона Украины «О реабилитации жертв полити-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="169.85" ytl="1311.31" xbr="1629.44" ybr="1372.13" z_order="0">
+      <attribute name="Printed Text">ческих репрессий на Украине» от 17 апреля 1991 года ввиду отсутствия сово-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="162.39" ytl="1378.07" xbr="1643.88" ybr="1441.32" z_order="0">
+      <attribute name="Printed Text">купности доказательств, подтверждающих обоснованность при-</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="174.68" ytl="1459.40" xbr="948.30" ybr="1520.37" z_order="0">
+      <attribute name="Printed Text">влечения ее к ответственности.</attribute>
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="355.73" ytl="1625.40" xbr="572.63" ybr="1742.11" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="194.28" ytl="1764.48" xbr="700.04" ybr="1970.68" z_order="0">
+    </box>
+    <box label="signature" source="manual" occluded="0" xtl="1142.16" ytl="1739.16" xbr="1538.29" ybr="1873.08" z_order="0">
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="261.98" ytl="1553.86" xbr="766.93" ybr="1596.65" z_order="0">
+      <attribute name="Printed Text">Сотрудник Реабилитационного</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="258.67" ytl="1731.99" xbr="763.61" ybr="1774.79" z_order="0">
+      <attribute name="Printed Text">Начальник Реабилитационного</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="875.06" ytl="1539.16" xbr="995.72" ybr="1614.19" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="135.60" ytl="1719.91" xbr="271.08" ybr="1794.94" z_order="0">
+      <attribute name="Contented Text">Зам.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="99.03" ytl="1660.52" xbr="338.93" ybr="1711.46" z_order="0">
+      <attribute name="Printed Text">лейтенант</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="92.46" ytl="1839.63" xbr="342.22" ybr="1883.99" z_order="0">
+      <attribute name="Printed Text">полковник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1003.95" ytl="1564.16" xbr="1657.93" ybr="1606.75" z_order="0">
+      <attribute name="Printed Text">Начальника управления по надзору за соблю-</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="1166.59" ytl="1586.24" xbr="1190.12" ybr="1615.40" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="handwritten_text" source="manual" occluded="0" xtl="423.38" ytl="1732.57" xbr="464.27" ybr="1782.25" z_order="0">
+      <attribute name="Contented Text">а</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="998.29" ytl="1609.67" xbr="1667.49" ybr="1646.20" z_order="0">
+      <attribute name="Printed Text">дением законов о национальной безопасности</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1051.38" ytl="1646.45" xbr="1602.96" ybr="1682.95" z_order="0">
+      <attribute name="Printed Text">Генеральной прокуратуры Украины.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1124.97" ytl="1681.11" xbr="1532.57" ybr="1715.58" z_order="0">
+      <attribute name="Printed Text">Государственный советник</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1184.71" ytl="1716.95" xbr="1469.63" ybr="1753.45" z_order="0">
+      <attribute name="Printed Text">юстиции 3 класса</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="570.10" ytl="1655.86" xbr="930.61" ybr="1715.20" z_order="0">
+      <attribute name="Printed Text">Б.В. Чернецкий.</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="646.28" ytl="1831.31" xbr="901.04" ybr="1888.99" z_order="0">
+      <attribute name="Printed Text">Б.А. Выжак.</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="225.16" ytl="1940.38" xbr="771.70" ybr="2035.80" z_order="0">
+      <attribute name="Date Written Text">5 декабря 1995 года</attribute>
+    </box>
+    <box label="date_handwritten" source="manual" occluded="0" xtl="1015.08" ytl="1929.17" xbr="1659.30" ybr="2031.00" z_order="0">
+      <attribute name="Date Written Text">8 декабря 1995 года</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="168.30" ytl="2076.90" xbr="1245.17" ybr="2133.23" z_order="0">
+      <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации не выдавалась</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1131.85" ytl="2124.66" xbr="1418.41" ybr="2161.47" z_order="0">
+      <attribute name="Printed Text">(фамилия, инициалы)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="1289.45" ytl="2164.27" xbr="1660.17" ybr="2210.02" z_order="0">
+      <attribute name="Printed Text">1991 года направлена</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="721.78" ytl="2278.51" xbr="1101.89" ybr="2316.16" z_order="0">
+      <attribute name="Printed Text">(степень родства, ф., и., о.)</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="165.71" ytl="2314.03" xbr="354.69" ybr="2361.28" z_order="0">
+      <attribute name="Printed Text">по адресу:</attribute>
+    </box>
+    <box label="printed_text" source="manual" occluded="0" xtl="243.06" ytl="2474.61" xbr="379.34" ybr="2523.68" z_order="0">
+      <attribute name="Printed Text">Подпись</attribute>
+    </box>
+  </image>
+  <image id="226" name="ГДАСБУ_ф5_оп1_спр8441_138.jpg" width="2044" height="3031">
     <box label="date_printed" source="manual" occluded="0" xtl="267.29" ytl="2021.47" xbr="585.12" ybr="2075.26" z_order="0">
       <attribute name="Date Printed Text">февраля 1917 г.</attribute>
     </box>
@@ -27934,7 +29140,7 @@
       <attribute name="Contented Text">79</attribute>
     </box>
   </image>
-  <image id="217" name="ГДАСБУ_ф5_оп1_спр8441_140.jpg" width="1859" height="2731">
+  <image id="227" name="ГДАСБУ_ф5_оп1_спр8441_140.jpg" width="1859" height="2731">
     <box label="printed_text" source="manual" occluded="0" xtl="160.65" ytl="1908.41" xbr="1729.20" ybr="1981.55" z_order="0">
       <attribute name="Printed Text">был мобизован в белую армию и служил непродолжительное время</attribute>
     </box>
@@ -28055,7 +29261,7 @@
       <attribute name="Printed Text">Как видно из заполненной Штемпелем анкеты, он в 1920 году</attribute>
     </box>
   </image>
-  <image id="218" name="ГДАСБУ_ф5_оп1_спр8441_141.jpg" width="1780" height="2653">
+  <image id="228" name="ГДАСБУ_ф5_оп1_спр8441_141.jpg" width="1780" height="2653">
     <box label="date_printed" source="manual" occluded="0" xtl="749.41" ytl="1326.34" xbr="1081.10" ybr="1377.70" z_order="0">
       <attribute name="Date Printed Text">17 апреля 1991 года</attribute>
     </box>
@@ -28216,7 +29422,7 @@
       <attribute name="Printed Text">ны</attribute>
     </box>
   </image>
-  <image id="219" name="ГДАСБУ_ф5_оп1_спр8441_142.jpg" width="1837" height="2732">
+  <image id="229" name="ГДАСБУ_ф5_оп1_спр8441_142.jpg" width="1837" height="2732">
     <box label="printed_text" source="manual" occluded="0" xtl="781.51" ytl="776.78" xbr="1070.03" ybr="809.29" z_order="0">
       <attribute name="Printed Text">(фамилия, инициалы)</attribute>
     </box>
@@ -28331,7 +29537,7 @@
       <attribute name="Printed Text">Место рождения</attribute>
     </box>
   </image>
-  <image id="220" name="ГДАСБУ_ф5_оп1_спр8441_143.jpg" width="1780" height="2642">
+  <image id="230" name="ГДАСБУ_ф5_оп1_спр8441_143.jpg" width="1780" height="2642">
     <box label="printed_text" source="manual" occluded="0" xtl="1090.89" ytl="792.36" xbr="1167.93" ybr="824.46" z_order="0">
       <attribute name="Printed Text">дней.</attribute>
     </box>
@@ -28492,7 +29698,7 @@
       <attribute name="Printed Text">дней.</attribute>
     </box>
   </image>
-  <image id="221" name="ГДАСБУ_ф5_оп1_спр8441_144.jpg" width="1836" height="2732">
+  <image id="231" name="ГДАСБУ_ф5_оп1_спр8441_144.jpg" width="1836" height="2732">
     <box label="printed_text" source="manual" occluded="0" xtl="306.41" ytl="730.83" xbr="521.78" ybr="765.37" z_order="0">
       <attribute name="Printed Text">в отношении</attribute>
     </box>
@@ -28610,7 +29816,7 @@
       <attribute name="Printed Text">за службу у белых. Решение по делу не изменялось</attribute>
     </box>
   </image>
-  <image id="222" name="ГДАСБУ_ф5_оп1_спр8441_146.jpg" width="1837" height="2732">
+  <image id="232" name="ГДАСБУ_ф5_оп1_спр8441_146.jpg" width="1837" height="2732">
     <box label="printed_text" source="manual" occluded="0" xtl="1074.51" ytl="220.99" xbr="1316.29" ybr="259.59" z_order="0">
       <attribute name="Printed Text">УТВЕРЖДАЮ</attribute>
     </box>
@@ -28728,7 +29934,7 @@
       <attribute name="Printed Text">г. Ялта</attribute>
     </box>
   </image>
-  <image id="223" name="ГДАСБУ_ф5_оп1_спр8441_147.jpg" width="1746" height="2641">
+  <image id="233" name="ГДАСБУ_ф5_оп1_спр8441_147.jpg" width="1746" height="2641">
     <box label="printed_text" source="manual" occluded="0" xtl="191.59" ytl="2047.83" xbr="865.67" ybr="2088.49" z_order="0">
       <attribute name="Printed Text">ПРИМЕЧАНИЕ: справка о реабилитации</attribute>
     </box>
@@ -28886,7 +30092,7 @@
       <attribute name="Printed Text">Б.А.Выжак.</attribute>
     </box>
   </image>
-  <image id="224" name="ГДАСБУ_ф5_оп1_спр8441_148.jpg" width="1837" height="2731">
+  <image id="234" name="ГДАСБУ_ф5_оп1_спр8441_148.jpg" width="1837" height="2731">
     <box label="printed_text" source="manual" occluded="0" xtl="154.52" ytl="1033.51" xbr="394.27" ybr="1084.30" z_order="0">
       <attribute name="Printed Text">Го рождения</attribute>
     </box>
@@ -29004,7 +30210,7 @@
       <attribute name="Contented Text">84</attribute>
     </box>
   </image>
-  <image id="225" name="ГДАСБУ_ф5_оп1_спр8441_149.jpg" width="1746" height="2642">
+  <image id="235" name="ГДАСБУ_ф5_оп1_спр8441_149.jpg" width="1746" height="2642">
     <box label="printed_text" source="manual" occluded="0" xtl="1368.63" ytl="1805.64" xbr="1648.96" ybr="1861.28" z_order="0">
       <attribute name="Printed Text">П.Г.Кушнир.</attribute>
     </box>
@@ -29165,7 +30371,7 @@
       <attribute name="Printed Text">юстиции 3 класса</attribute>
     </box>
   </image>
-  <image id="226" name="ГДАСБУ_ф5_оп1_спр8441_118.jpg" width="930" height="1994">
+  <image id="236" name="ГДАСБУ_ф5_оп1_спр8441_118.jpg" width="930" height="1994">
     <box label="date_handwritten" source="manual" occluded="0" xtl="75.34" ytl="1249.17" xbr="756.15" ybr="1337.52" z_order="0">
       <attribute name="Date Written Text">Окт. 29-го дня 1918г.</attribute>
     </box>
@@ -29275,7 +30481,7 @@
       <attribute name="Printed Text">РЕМЕННОЕ СВИДЪТЕЛЬСТВО</attribute>
     </box>
   </image>
-  <image id="227" name="ГДАСБУ_ф5_оп1_спр8441_119.jpg" width="907" height="2101">
+  <image id="237" name="ГДАСБУ_ф5_оп1_спр8441_119.jpg" width="907" height="2101">
     <box label="seal" source="manual" occluded="0" xtl="129.68" ytl="1092.53" xbr="465.54" ybr="1421.08" z_order="0">
     </box>
     <box label="seal" source="manual" occluded="0" xtl="573.23" ytl="623.42" xbr="881.70" ybr="937.38" z_order="0">
@@ -29343,7 +30549,7 @@
     <box label="seal" source="manual" occluded="0" xtl="76.75" ytl="318.60" xbr="429.03" ybr="692.79" z_order="0">
     </box>
   </image>
-  <image id="228" name="ГДАСБУ_ф5_оп1_спр8441_120.jpg" width="1927" height="3176">
+  <image id="238" name="ГДАСБУ_ф5_оп1_спр8441_120.jpg" width="1927" height="3176">
     <box label="handwritten_text" source="manual" occluded="0" xtl="857.03" ytl="409.08" xbr="1072.78" ybr="589.30" rotation="307.90" z_order="0">
       <attribute name="Contented Text">У</attribute>
     </box>
@@ -29557,7 +30763,7 @@
       <attribute name="Contented Text">Толы</attribute>
     </box>
   </image>
-  <image id="229" name="ГДАСБУ_ф5_оп1_спр8441_121.jpg" width="1876" height="2952">
+  <image id="239" name="ГДАСБУ_ф5_оп1_спр8441_121.jpg" width="1876" height="2952">
     <box label="table" source="manual" occluded="0" xtl="125.25" ytl="102.42" xbr="1829.53" ybr="2393.17" z_order="0">
     </box>
     <box label="handwritten_text" source="manual" occluded="0" xtl="1025.02" ytl="313.81" xbr="1781.14" ybr="374.15" z_order="0">
@@ -29759,7 +30965,7 @@
       <attribute name="Printed Text">13. В каком чинъ и в какую часть</attribute>
     </box>
   </image>
-  <image id="230" name="ГДАСБУ_ф5_оп1_спр8441_123.jpg" width="1949" height="2912">
+  <image id="240" name="ГДАСБУ_ф5_оп1_спр8441_123.jpg" width="1949" height="2912">
     <box label="printed_text" source="manual" occluded="0" xtl="255.41" ytl="642.90" xbr="341.34" ybr="694.05" z_order="0">
       <attribute name="Printed Text">кого</attribute>
     </box>
@@ -29842,7 +31048,7 @@
       <attribute name="Contented Text">как убе</attribute>
     </box>
   </image>
-  <image id="231" name="ГДАСБУ_ф5_оп1_спр8441_124.jpg" width="1369" height="2022">
+  <image id="241" name="ГДАСБУ_ф5_оп1_спр8441_124.jpg" width="1369" height="2022">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1071.20" ytl="543.97" xbr="1284.61" ybr="621.20" z_order="0">
       <attribute name="Contented Text">дъйст-</attribute>
     </box>
@@ -29925,7 +31131,7 @@
       <attribute name="Printed Text">2</attribute>
     </box>
   </image>
-  <image id="232" name="ГДАСБУ_ф5_оп1_спр8441_126.jpg" width="1369" height="1960">
+  <image id="242" name="ГДАСБУ_ф5_оп1_спр8441_126.jpg" width="1369" height="1960">
     <box label="printed_text" source="manual" occluded="0" xtl="74.35" ytl="515.61" xbr="158.75" ybr="555.17" z_order="0">
       <attribute name="Printed Text">№</attribute>
     </box>
@@ -30008,7 +31214,7 @@
       <attribute name="Contented Text">у Врангеля, он отвечал</attribute>
     </box>
   </image>
-  <image id="233" name="ГДАСБУ_ф5_оп1_спр8441_127.jpg" width="1324" height="1949">
+  <image id="243" name="ГДАСБУ_ф5_оп1_спр8441_127.jpg" width="1324" height="1949">
     <box label="handwritten_text" source="manual" occluded="0" xtl="132.95" ytl="300.01" xbr="531.90" ybr="388.41" z_order="0">
       <attribute name="Contented Text">до 55 лет.</attribute>
     </box>
@@ -30056,7 +31262,7 @@
     <box label="signature" source="manual" occluded="0" xtl="701.90" ytl="1669.14" xbr="1295.81" ybr="1864.10" z_order="0">
     </box>
   </image>
-  <image id="234" name="ГДАСБУ_ф5_оп1_спр8441_128.jpg" width="2027" height="2986">
+  <image id="244" name="ГДАСБУ_ф5_оп1_спр8441_128.jpg" width="2027" height="2986">
     <box label="handwritten_text" source="manual" occluded="0" xtl="549.54" ytl="250.53" xbr="1824.60" ybr="376.49" z_order="0">
       <attribute name="Contented Text">Фаротон Митриевич Макаров</attribute>
     </box>
@@ -30220,7 +31426,7 @@
       <attribute name="Contented Text">ст. федосьевна Х. попов.</attribute>
     </box>
   </image>
-  <image id="235" name="ГДАСБУ_ф5_оп1_спр8441_129.jpg" width="1904" height="2974">
+  <image id="245" name="ГДАСБУ_ф5_оп1_спр8441_129.jpg" width="1904" height="2974">
     <box label="printed_text" source="manual" occluded="0" xtl="193.57" ytl="1155.60" xbr="1106.03" ybr="1219.03" z_order="0">
       <attribute name="Printed Text">Комиссия предупреждает, что за неправильные</attribute>
     </box>
@@ -30296,7 +31502,7 @@
       <attribute name="Printed Text">сведения будут взяты заложниками</attribute>
     </box>
   </image>
-  <image id="236" name="ГДАСБУ_ф5_оп1_спр8441_227.jpg" width="1284" height="1932">
+  <image id="246" name="ГДАСБУ_ф5_оп1_спр8441_227.jpg" width="1284" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="19.27" ytl="1405.06" xbr="321.87" ybr="1457.51" z_order="0">
       <attribute name="Printed Text">Нач. отдела</attribute>
     </box>
@@ -30408,7 +31614,7 @@
       <attribute name="Printed Text">(наименование органа и подразделения)</attribute>
     </box>
   </image>
-  <image id="237" name="ГДАСБУ_ф5_оп1_спр8441_228.jpg" width="1357" height="1909">
+  <image id="247" name="ГДАСБУ_ф5_оп1_спр8441_228.jpg" width="1357" height="1909">
     <box label="handwritten_text" source="manual" occluded="0" xtl="309.18" ytl="36.10" xbr="655.01" ybr="162.67" z_order="0">
       <attribute name="Contented Text">Арх 8441</attribute>
     </box>
@@ -30469,7 +31675,7 @@
       <attribute name="Date Printed Text">193 г.</attribute>
     </box>
   </image>
-  <image id="238" name="ГДАСБУ_ф5_оп1_спр8441_229.jpg" width="1296" height="1932">
+  <image id="248" name="ГДАСБУ_ф5_оп1_спр8441_229.jpg" width="1296" height="1932">
     <box label="date_handwritten" source="manual" occluded="0" xtl="55.47" ytl="1503.17" xbr="732.61" ybr="1617.10" z_order="0">
       <attribute name="Date Written Text">8 августа 1995г.</attribute>
     </box>
@@ -30581,7 +31787,7 @@
       <attribute name="Contented Text">г. Ялта</attribute>
     </box>
   </image>
-  <image id="239" name="ГДАСБУ_ф5_оп1_спр8441_230.jpg" width="1312" height="1910">
+  <image id="249" name="ГДАСБУ_ф5_оп1_спр8441_230.jpg" width="1312" height="1910">
     <box label="printed_text" source="manual" occluded="0" xtl="643.71" ytl="228.75" xbr="811.31" ybr="266.73" z_order="0">
       <attribute name="Printed Text">нарсудом</attribute>
     </box>
@@ -30646,7 +31852,7 @@
       <attribute name="Printed Text">сроком лет мес л. св.</attribute>
     </box>
   </image>
-  <image id="240" name="ГДАСБУ_ф5_оп1_спр8441_231.jpg" width="1296" height="1932">
+  <image id="250" name="ГДАСБУ_ф5_оп1_спр8441_231.jpg" width="1296" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="966.95" ytl="189.63" xbr="1232.05" ybr="225.62" z_order="0" group_id="1">
       <attribute name="Printed Text">Место для индекса</attribute>
     </box>
@@ -30761,7 +31967,7 @@
       <attribute name="Printed Text">подразделения</attribute>
     </box>
   </image>
-  <image id="241" name="ГДАСБУ_ф5_оп1_спр8441_232.jpg" width="1335" height="1909">
+  <image id="251" name="ГДАСБУ_ф5_оп1_спр8441_232.jpg" width="1335" height="1909">
     <box label="handwritten_text" source="manual" occluded="0" xtl="62.42" ytl="447.13" xbr="1324.08" ybr="588.06" z_order="0">
       <attribute name="Contented Text">Свед о привед приговора</attribute>
     </box>
@@ -30825,7 +32031,7 @@
     <box label="seal" source="manual" occluded="0" xtl="320.44" ytl="976.38" xbr="876.25" ybr="1226.36" z_order="0">
     </box>
   </image>
-  <image id="242" name="ГДАСБУ_ф5_оп1_спр8441_233.jpg" width="1296" height="1932">
+  <image id="252" name="ГДАСБУ_ф5_оп1_спр8441_233.jpg" width="1296" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="340.83" ytl="1353.60" xbr="923.34" ybr="1390.18" z_order="0">
       <attribute name="Printed Text">(наименование органа и подразделения)</attribute>
     </box>
@@ -30937,7 +32143,7 @@
       <attribute name="Printed Text">Нач. отдела</attribute>
     </box>
   </image>
-  <image id="243" name="ГДАСБУ_ф5_оп1_спр8441_234.jpg" width="1335" height="1954">
+  <image id="253" name="ГДАСБУ_ф5_оп1_спр8441_234.jpg" width="1335" height="1954">
     <box label="signature" source="manual" occluded="0" xtl="1146.85" ytl="1017.41" xbr="1272.06" ybr="1338.62" z_order="0">
     </box>
     <box label="printed_text" source="manual" occluded="0" xtl="706.66" ytl="1063.32" xbr="978.39" ybr="1100.96" z_order="0">
@@ -30982,7 +32188,7 @@
       <attribute name="Printed Text">ОСО МВД УССР</attribute>
     </box>
   </image>
-  <image id="244" name="ГДАСБУ_ф5_оп1_спр8441_244.jpg" width="1943" height="3154">
+  <image id="254" name="ГДАСБУ_ф5_оп1_спр8441_244.jpg" width="1943" height="3154">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1275.70" ytl="756.10" xbr="1535.49" ybr="814.96" z_order="0">
       <attribute name="Contented Text">Зазулин)</attribute>
     </box>
@@ -31098,12 +32304,12 @@
     <box label="signature" source="manual" occluded="0" xtl="858.26" ytl="751.68" xbr="1306.68" ybr="925.31" z_order="0">
     </box>
   </image>
-  <image id="245" name="ГДАСБУ_ф5_оп1_спр8441_245.jpg" width="2169" height="3273">
+  <image id="255" name="ГДАСБУ_ф5_оп1_спр8441_245.jpg" width="2169" height="3273">
     <box label="printed_text" source="manual" occluded="0" xtl="857.44" ytl="78.21" xbr="1381.78" ybr="269.71" z_order="0">
       <attribute name="Printed Text">01422</attribute>
     </box>
   </image>
-  <image id="246" name="ГДАСБУ_ф5_оп1_спр8441_204.jpg" width="1312" height="1909">
+  <image id="256" name="ГДАСБУ_ф5_оп1_спр8441_204.jpg" width="1312" height="1909">
     <polygon label="handwritten_text" source="manual" occluded="0" points="24.67,453.73;1036.93,399.50;1030.36,338.70;26.32,388.00" z_order="0">
       <attribute name="Contented Text">Тройки крымск ударн группы</attribute>
     </polygon>
@@ -31136,7 +32342,7 @@
       <attribute name="Contented Text">нет.</attribute>
     </box>
   </image>
-  <image id="247" name="ГДАСБУ_ф5_оп1_спр8441_210.jpg" width="1312" height="1910">
+  <image id="257" name="ГДАСБУ_ф5_оп1_спр8441_210.jpg" width="1312" height="1910">
     <box label="date_handwritten" source="manual" occluded="0" xtl="66.61" ytl="272.29" xbr="285.28" ybr="367.65" z_order="0">
       <attribute name="Date Written Text">22/9.20г</attribute>
     </box>
@@ -31166,7 +32372,7 @@
       <attribute name="Printed Text">ОСО МВД УССР</attribute>
     </polygon>
   </image>
-  <image id="248" name="ГДАСБУ_ф5_оп1_спр8441_212.jpg" width="1313" height="1910">
+  <image id="258" name="ГДАСБУ_ф5_оп1_спр8441_212.jpg" width="1313" height="1910">
     <box label="handwritten_text" source="manual" occluded="0" xtl="803.09" ytl="176.85" xbr="1259.64" ybr="279.57" z_order="0">
       <attribute name="Contented Text">Поет. Чрезвыч.</attribute>
     </box>
@@ -31211,7 +32417,7 @@
       <attribute name="Contented Text">Арх№ 8441 в ЧАО КГБ УССР</attribute>
     </box>
   </image>
-  <image id="249" name="ГДАСБУ_ф5_оп1_спр8441_216.jpg" width="1313" height="1909">
+  <image id="259" name="ГДАСБУ_ф5_оп1_спр8441_216.jpg" width="1313" height="1909">
     <box label="date_handwritten" source="manual" occluded="0" xtl="413.80" ytl="64.28" xbr="653.72" ybr="120.15" z_order="0">
       <attribute name="Date Written Text">10.12.20</attribute>
     </box>
@@ -31263,7 +32469,7 @@
       <attribute name="Printed Text">14 - 895.</attribute>
     </polygon>
   </image>
-  <image id="250" name="ГДАСБУ_ф5_оп1_спр8441_217.jpg" width="1284" height="1944">
+  <image id="260" name="ГДАСБУ_ф5_оп1_спр8441_217.jpg" width="1284" height="1944">
     <box label="printed_text" source="manual" occluded="0" xtl="35.77" ytl="520.98" xbr="225.52" ybr="573.25" z_order="0">
       <attribute name="Printed Text">1. Фамилия</attribute>
     </box>
@@ -31372,7 +32578,7 @@
       <attribute name="Date Written Text">08 августа 1995 р.</attribute>
     </box>
   </image>
-  <image id="251" name="ГДАСБУ_ф5_оп1_спр8441_221.jpg" width="1284" height="1943">
+  <image id="261" name="ГДАСБУ_ф5_оп1_спр8441_221.jpg" width="1284" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="979.87" ytl="231.56" xbr="1196.72" ybr="262.54" z_order="0">
       <attribute name="Printed Text">подразделения</attribute>
     </box>
@@ -31481,7 +32687,7 @@
       <attribute name="Printed Text">5. Адрес</attribute>
     </box>
   </image>
-  <image id="252" name="ГДАСБУ_ф5_оп1_спр8441_222.jpg" width="1346" height="1910">
+  <image id="262" name="ГДАСБУ_ф5_оп1_спр8441_222.jpg" width="1346" height="1910">
     <polygon label="seal" source="manual" occluded="0" points="444.26,689.90;960.52,665.23;983.54,800.05;462.35,806.63" z_order="0">
     </polygon>
     <box label="handwritten_text" source="manual" occluded="0" xtl="110.50" ytl="520.55" xbr="916.13" ybr="629.06" z_order="0">
@@ -31530,7 +32736,7 @@
       <attribute name="Date Written Text">22 Ⅻ 20 19</attribute>
     </box>
   </image>
-  <image id="253" name="ГДАСБУ_ф5_оп1_спр8441_223.jpg" width="1284" height="1943">
+  <image id="263" name="ГДАСБУ_ф5_оп1_спр8441_223.jpg" width="1284" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="14.90" ytl="573.78" xbr="322.75" ybr="620.25" z_order="0">
       <attribute name="Printed Text">2. Имя и отчество</attribute>
     </box>
@@ -31636,7 +32842,7 @@
       <attribute name="Printed Text">ГИБ МВД Украины</attribute>
     </box>
   </image>
-  <image id="254" name="ГДАСБУ_ф5_оп1_спр8441_226.jpg" width="1335" height="1909">
+  <image id="264" name="ГДАСБУ_ф5_оп1_спр8441_226.jpg" width="1335" height="1909">
     <box label="seal" source="manual" occluded="0" xtl="701.87" ytl="279.22" xbr="1063.39" ybr="323.58" z_order="0">
     </box>
     <box label="date_printed" source="manual" occluded="0" xtl="194.09" ytl="188.84" xbr="243.39" ybr="330.16" z_order="0">
@@ -31682,7 +32888,7 @@
       <attribute name="Contented Text">РЫБАЛЬЧЕНКО</attribute>
     </box>
   </image>
-  <image id="255" name="ГДАСБУ_ф5_оп1_спр8441_049.jpg" width="3898" height="2636">
+  <image id="265" name="ГДАСБУ_ф5_оп1_спр8441_049.jpg" width="3898" height="2636">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1616.04" ytl="1045.95" xbr="1653.31" ybr="1089.09" z_order="-1">
       <attribute name="Contented Text">-</attribute>
     </box>
@@ -31982,7 +33188,7 @@
       <attribute name="Contented Text">5520</attribute>
     </box>
   </image>
-  <image id="256" name="ГДАСБУ_ф5_оп1_спр8441_213.jpg" width="1318" height="1944">
+  <image id="266" name="ГДАСБУ_ф5_оп1_спр8441_213.jpg" width="1318" height="1944">
     <box label="handwritten_text" source="manual" occluded="0" xtl="208.48" ytl="815.66" xbr="444.69" ybr="864.07" z_order="0">
       <attribute name="Contented Text">г. Ялта</attribute>
     </box>
@@ -32097,7 +33303,7 @@
       <attribute name="Printed Text">Приложение № 18</attribute>
     </box>
   </image>
-  <image id="257" name="ГДАСБУ_ф5_оп1_спр8441_214.jpg" width="1312" height="1909">
+  <image id="267" name="ГДАСБУ_ф5_оп1_спр8441_214.jpg" width="1312" height="1909">
     <polygon label="seal" source="manual" occluded="0" points="616.55,884.06;616.55,815.86;920.14,840.06;924.54,921.46" z_order="0">
     </polygon>
     <polygon label="seal" source="manual" occluded="0" points="70.98,239.49;73.18,384.68;1175.32,320.89;1164.32,202.09" z_order="0">
@@ -32153,7 +33359,7 @@
     <polygon label="seal" source="manual" occluded="0" points="702.35,617.87;1192.92,767.46;1109.33,925.86;649.55,789.46" z_order="0">
     </polygon>
   </image>
-  <image id="258" name="ГДАСБУ_ф5_оп1_спр8441_215.jpg" width="1284" height="1943">
+  <image id="268" name="ГДАСБУ_ф5_оп1_спр8441_215.jpg" width="1284" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="392.22" ytl="458.64" xbr="839.47" ybr="497.36" z_order="0">
       <attribute name="Printed Text">куда направляется требование)</attribute>
     </box>
@@ -32265,7 +33471,7 @@
     <polygon label="signature" source="manual" occluded="0" points="1080.85,1345.29;899.49,1652.04;545.72,1596.06;1002.49,1349.76" z_order="0">
     </polygon>
   </image>
-  <image id="259" name="ГДАСБУ_ф5_оп1_спр8441_218.jpg" width="1323" height="1910">
+  <image id="269" name="ГДАСБУ_ф5_оп1_спр8441_218.jpg" width="1323" height="1910">
     <polygon label="seal" source="manual" occluded="0" points="88.52,41.92;536.73,39.37;541.83,113.22;98.71,120.86" z_order="0">
     </polygon>
     <polygon label="seal" source="manual" occluded="0" points="45.23,589.45;60.51,744.80;602.95,732.06;1175.95,676.04;1168.31,592.00" z_order="0">
@@ -32347,7 +33553,7 @@
     <polygon label="seal" source="manual" occluded="0" points="269.33,1193.01;231.13,1363.64;725.19,1506.25;776.12,1348.36" z_order="0">
     </polygon>
   </image>
-  <image id="260" name="ГДАСБУ_ф5_оп1_спр8441_219.jpg" width="1284" height="1943">
+  <image id="270" name="ГДАСБУ_ф5_оп1_спр8441_219.jpg" width="1284" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="34.70" ytl="500.38" xbr="241.87" ybr="546.85" z_order="0">
       <attribute name="Printed Text">1. Фамилия</attribute>
     </box>
@@ -32459,7 +33665,7 @@
       <attribute name="Printed Text">3. Год рождения</attribute>
     </box>
   </image>
-  <image id="261" name="ГДАСБУ_ф5_оп1_спр8441_220.jpg" width="1323" height="1910">
+  <image id="271" name="ГДАСБУ_ф5_оп1_спр8441_220.jpg" width="1323" height="1910">
     <box label="handwritten_text" source="manual" occluded="0" xtl="682.37" ytl="280.24" xbr="1243.64" ybr="374.89" z_order="0">
       <attribute name="Contented Text">служба у белых</attribute>
     </box>
@@ -32535,7 +33741,7 @@
       <attribute name="Contented Text">нет</attribute>
     </box>
   </image>
-  <image id="262" name="ГДАСБУ_ф5_оп1_спр8441_225.jpg" width="1284" height="1932">
+  <image id="272" name="ГДАСБУ_ф5_оп1_спр8441_225.jpg" width="1284" height="1932">
     <box label="handwritten_text" source="manual" occluded="0" xtl="359.21" ytl="568.49" xbr="1102.82" ybr="635.28" z_order="0">
       <attribute name="Contented Text">Анатолий Александрович</attribute>
     </box>
@@ -32641,7 +33847,7 @@
       <attribute name="Contented Text">Саратовская губ.</attribute>
     </box>
   </image>
-  <image id="263" name="ГДАСБУ_ф5_оп1_спр8441_200.jpg" width="1312" height="1932">
+  <image id="273" name="ГДАСБУ_ф5_оп1_спр8441_200.jpg" width="1312" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="1182.26" ytl="256.62" xbr="1256.36" ybr="295.85" z_order="0">
       <attribute name="Printed Text">р-на</attribute>
     </box>
@@ -32720,7 +33926,7 @@
       <attribute name="Date Written Text">22. XII. 1920 г.</attribute>
     </box>
   </image>
-  <image id="264" name="ГДАСБУ_ф5_оп1_спр8441_201.jpg" width="1318" height="1943">
+  <image id="274" name="ГДАСБУ_ф5_оп1_спр8441_201.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="53.03" ytl="802.62" xbr="201.03" ybr="849.77" z_order="0">
       <attribute name="Printed Text">5. Адрес</attribute>
     </box>
@@ -32832,7 +34038,7 @@
       <attribute name="Contented Text">г. Одесса</attribute>
     </box>
   </image>
-  <image id="265" name="ГДАСБУ_ф5_оп1_спр8441_202.jpg" width="1312" height="1932">
+  <image id="275" name="ГДАСБУ_ф5_оп1_спр8441_202.jpg" width="1312" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="509.39" ytl="986.58" xbr="858.38" ybr="1073.33" z_order="0">
       <attribute name="Printed Text">14 - 895</attribute>
     </box>
@@ -32886,7 +34092,7 @@
     <box label="seal" source="manual" occluded="0" xtl="419.62" ytl="802.00" xbr="956.22" ybr="1082.41" z_order="0">
     </box>
   </image>
-  <image id="266" name="ГДАСБУ_ф5_оп1_спр8441_203.jpg" width="1318" height="1943">
+  <image id="276" name="ГДАСБУ_ф5_оп1_спр8441_203.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="561.82" ytl="1119.01" xbr="743.74" ybr="1177.69" z_order="0">
       <attribute name="Printed Text">полная</attribute>
     </box>
@@ -32998,7 +34204,7 @@
       <attribute name="Printed Text">(наименование органа и подразделения)</attribute>
     </box>
   </image>
-  <image id="267" name="ГДАСБУ_ф5_оп1_спр8441_205.jpg" width="1318" height="1943">
+  <image id="277" name="ГДАСБУ_ф5_оп1_спр8441_205.jpg" width="1318" height="1943">
     <box label="handwritten_text" source="manual" occluded="0" xtl="228.58" ytl="753.45" xbr="527.34" ybr="828.14" z_order="0">
       <attribute name="Contented Text">г. Ялта</attribute>
     </box>
@@ -33110,7 +34316,7 @@
       <attribute name="Contented Text">сестра милосердия</attribute>
     </box>
   </image>
-  <image id="268" name="ГДАСБУ_ф5_оп1_спр8441_206.jpg" width="1312" height="1909">
+  <image id="278" name="ГДАСБУ_ф5_оп1_спр8441_206.jpg" width="1312" height="1909">
     <box label="printed_text" source="manual" occluded="0" xtl="1166.85" ytl="193.71" xbr="1242.96" ybr="235.22" z_order="0">
       <attribute name="Printed Text">р-на</attribute>
     </box>
@@ -33177,7 +34383,7 @@
       <attribute name="Printed Text">1"1  8 - 95</attribute>
     </box>
   </image>
-  <image id="269" name="ГДАСБУ_ф5_оп1_спр8441_207.jpg" width="1318" height="1943">
+  <image id="279" name="ГДАСБУ_ф5_оп1_спр8441_207.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="535.38" ytl="646.89" xbr="869.80" ybr="695.38" z_order="0">
       <attribute name="Printed Text">4. Место рождения</attribute>
     </box>
@@ -33286,7 +34492,7 @@
       <attribute name="Printed Text">(подпись)</attribute>
     </box>
   </image>
-  <image id="270" name="ГДАСБУ_ф5_оп1_спр8441_208.jpg" width="1312" height="1910">
+  <image id="280" name="ГДАСБУ_ф5_оп1_спр8441_208.jpg" width="1312" height="1910">
     <box label="seal" source="manual" occluded="0" xtl="408.81" ytl="1032.30" xbr="1011.07" ybr="1438.42" z_order="0">
     </box>
     <box label="printed_text" source="manual" occluded="0" xtl="390.52" ytl="570.92" xbr="599.03" ybr="612.62" z_order="0">
@@ -33350,7 +34556,7 @@
       <attribute name="Printed Text">8 - 95</attribute>
     </box>
   </image>
-  <image id="271" name="ГДАСБУ_ф5_оп1_спр8441_209.jpg" width="1318" height="1943">
+  <image id="281" name="ГДАСБУ_ф5_оп1_спр8441_209.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="34.61" ytl="657.94" xbr="329.63" ybr="706.43" z_order="0">
       <attribute name="Printed Text">3. Год рождения</attribute>
     </box>
@@ -33462,7 +34668,7 @@
       <attribute name="Date Written Text">8 августа 1995 г.</attribute>
     </box>
   </image>
-  <image id="272" name="ГДАСБУ_ф5_оп1_спр8441_211.jpg" width="1318" height="1944">
+  <image id="282" name="ГДАСБУ_ф5_оп1_спр8441_211.jpg" width="1318" height="1944">
     <box label="printed_text" source="manual" occluded="0" xtl="1009.28" ytl="140.51" xbr="1212.26" ybr="178.06" z_order="0">
       <attribute name="Printed Text">в Инструкции</attribute>
     </box>
@@ -33574,7 +34780,7 @@
       <attribute name="Printed Text">Исполнитель</attribute>
     </box>
   </image>
-  <image id="273" name="ГДАСБУ_ф5_оп1_спр8441_190.jpg" width="1323" height="1999">
+  <image id="283" name="ГДАСБУ_ф5_оп1_спр8441_190.jpg" width="1323" height="1999">
     <box label="printed_text" source="manual" occluded="0" xtl="583.70" ytl="1119.42" xbr="759.10" ybr="1155.28" z_order="0">
       <attribute name="Printed Text">ОСО МВД</attribute>
     </box>
@@ -33635,7 +34841,7 @@
       <attribute name="Contented Text">ВМН.</attribute>
     </box>
   </image>
-  <image id="274" name="ГДАСБУ_ф5_оп1_спр8441_191.jpg" width="1318" height="1943">
+  <image id="284" name="ГДАСБУ_ф5_оп1_спр8441_191.jpg" width="1318" height="1943">
     <box label="handwritten_text" source="manual" occluded="0" xtl="287.51" ytl="478.28" xbr="633.74" ybr="557.11" z_order="0">
       <attribute name="Contented Text">Штемпель</attribute>
     </box>
@@ -33747,7 +34953,7 @@
       <attribute name="Printed Text">полная</attribute>
     </box>
   </image>
-  <image id="275" name="ГДАСБУ_ф5_оп1_спр8441_192.jpg" width="1312" height="1954">
+  <image id="285" name="ГДАСБУ_ф5_оп1_спр8441_192.jpg" width="1312" height="1954">
     <box label="handwritten_text" source="manual" occluded="0" xtl="17.41" ytl="312.68" xbr="1289.14" ybr="433.89" z_order="0">
       <attribute name="Contented Text">Постанов. Чрезвыч. Тройки Крымск</attribute>
     </box>
@@ -33793,7 +34999,7 @@
       <attribute name="Contented Text">Урожен г.Новомиргород Харьков. губ</attribute>
     </box>
   </image>
-  <image id="276" name="ГДАСБУ_ф5_оп1_спр8441_193.jpg" width="1318" height="1932">
+  <image id="286" name="ГДАСБУ_ф5_оп1_спр8441_193.jpg" width="1318" height="1932">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1155.49" ytl="14.25" xbr="1251.56" ybr="108.28" z_order="0">
       <attribute name="Contented Text">107</attribute>
     </box>
@@ -33902,7 +35108,7 @@
       <attribute name="Contented Text">в</attribute>
     </box>
   </image>
-  <image id="277" name="ГДАСБУ_ф5_оп1_спр8441_194.jpg" width="1313" height="1954">
+  <image id="287" name="ГДАСБУ_ф5_оп1_спр8441_194.jpg" width="1313" height="1954">
     <box label="handwritten_text" source="manual" occluded="0" xtl="249.18" ytl="42.92" xbr="1121.77" ybr="203.10" z_order="0">
       <attribute name="Contented Text">Арх 8441 КГБ - УССР</attribute>
     </box>
@@ -33968,7 +35174,7 @@
       <attribute name="Contented Text">Свед о</attribute>
     </box>
   </image>
-  <image id="278" name="ГДАСБУ_ф5_оп1_спр8441_195.jpg" width="1318" height="1932">
+  <image id="288" name="ГДАСБУ_ф5_оп1_спр8441_195.jpg" width="1318" height="1932">
     <box label="printed_text" source="manual" occluded="0" xtl="484.18" ytl="1418.70" xbr="747.60" ybr="1471.59" z_order="0">
       <attribute name="Printed Text">Б.А.Выжак</attribute>
     </box>
@@ -34080,7 +35286,7 @@
       <attribute name="Contented Text">29</attribute>
     </box>
   </image>
-  <image id="279" name="ГДАСБУ_ф5_оп1_спр8441_196.jpg" width="1313" height="1954">
+  <image id="289" name="ГДАСБУ_ф5_оп1_спр8441_196.jpg" width="1313" height="1954">
     <box label="handwritten_text" source="manual" occluded="0" xtl="271.59" ytl="713.35" xbr="1001.72" ybr="812.62" z_order="0">
       <attribute name="Contented Text">в исполнение нет.</attribute>
     </box>
@@ -34125,7 +35331,7 @@
       <attribute name="Contented Text">Арест</attribute>
     </box>
   </image>
-  <image id="280" name="ГДАСБУ_ф5_оп1_спр8441_197.jpg" width="1318" height="1943">
+  <image id="290" name="ГДАСБУ_ф5_оп1_спр8441_197.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="71.77" ytl="1761.99" xbr="451.94" ybr="1816.87" z_order="0">
       <attribute name="Printed Text">Телефон . . 93-03</attribute>
     </box>
@@ -34231,7 +35437,7 @@
       <attribute name="Printed Text">Чернецкий Б.В.</attribute>
     </box>
   </image>
-  <image id="281" name="ГДАСБУ_ф5_оп1_спр8441_198.jpg" width="1313" height="1955">
+  <image id="291" name="ГДАСБУ_ф5_оп1_спр8441_198.jpg" width="1313" height="1955">
     <box label="printed_text" source="manual" occluded="0" xtl="920.39" ytl="970.09" xbr="1098.91" ybr="1012.19" z_order="0">
       <attribute name="Printed Text">Рыбальчевская</attribute>
     </box>
@@ -34286,7 +35492,7 @@
       <attribute name="Printed Text">14 8 - 95</attribute>
     </box>
   </image>
-  <image id="282" name="ГДАСБУ_ф5_оп1_спр8441_199.jpg" width="1318" height="1943">
+  <image id="292" name="ГДАСБУ_ф5_оп1_спр8441_199.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="313.89" ytl="1278.95" xbr="997.35" ybr="1335.52" z_order="0">
       <attribute name="Printed Text">Реабилитационный отдел СБУ</attribute>
     </box>
@@ -34395,7 +35601,7 @@
       <attribute name="Printed Text">6. Место работы и должность</attribute>
     </box>
   </image>
-  <image id="283" name="ГДАСБУ_ф5_оп1_спр8441_180.jpg" width="1836" height="2731">
+  <image id="293" name="ГДАСБУ_ф5_оп1_спр8441_180.jpg" width="1836" height="2731">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1657.05" ytl="10.60" xbr="1751.15" ybr="104.70" z_order="0">
       <attribute name="Contented Text">100</attribute>
     </box>
@@ -34492,7 +35698,7 @@
       <attribute name="Printed Text">Место рождения г.Петроград.</attribute>
     </box>
   </image>
-  <image id="284" name="ГДАСБУ_ф5_оп1_спр8441_181.jpg" width="1802" height="2641">
+  <image id="294" name="ГДАСБУ_ф5_оп1_спр8441_181.jpg" width="1802" height="2641">
     <box label="date_printed" source="manual" occluded="0" xtl="742.61" ytl="1341.44" xbr="1087.47" ybr="1390.70" z_order="0">
       <attribute name="Date Printed Text">17 апреля 1991 года</attribute>
     </box>
@@ -34653,7 +35859,7 @@
       <attribute name="Printed Text">ческих репрессий на Украине" от</attribute>
     </box>
   </image>
-  <image id="285" name="ГДАСБУ_ф5_оп1_спр8441_182.jpg" width="1836" height="2731">
+  <image id="295" name="ГДАСБУ_ф5_оп1_спр8441_182.jpg" width="1836" height="2731">
     <box label="printed_text" source="manual" occluded="0" xtl="625.99" ytl="618.26" xbr="1114.17" ybr="681.48" z_order="0">
       <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
     </box>
@@ -34750,7 +35956,7 @@
       <attribute name="Printed Text">в отношении Негоженко М.К.</attribute>
     </box>
   </image>
-  <image id="286" name="ГДАСБУ_ф5_оп1_спр8441_183.jpg" width="1802" height="2642">
+  <image id="296" name="ГДАСБУ_ф5_оп1_спр8441_183.jpg" width="1802" height="2642">
     <box label="printed_text" source="manual" occluded="0" xtl="735.17" ytl="2298.71" xbr="1135.43" ybr="2335.10" z_order="0">
       <attribute name="Printed Text">(степень, родства, ф.,ен, о)</attribute>
     </box>
@@ -34911,7 +36117,7 @@
       <attribute name="Printed Text">по адресу:</attribute>
     </box>
   </image>
-  <image id="287" name="ГДАСБУ_ф5_оп1_спр8441_184.jpg" width="1904" height="2766">
+  <image id="297" name="ГДАСБУ_ф5_оп1_спр8441_184.jpg" width="1904" height="2766">
     <box label="printed_text" source="manual" occluded="0" xtl="328.52" ytl="394.00" xbr="1835.69" ybr="455.90" z_order="0">
       <attribute name="Printed Text">Цанов Дмитрий Иванович, 1883 года рождения, уроженец Турции,</attribute>
     </box>
@@ -35022,7 +36228,7 @@
       <attribute name="Date Written Text">"24" ноября 1995 года.</attribute>
     </box>
   </image>
-  <image id="288" name="ГДАСБУ_ф5_оп1_спр8441_185.jpg" width="1363" height="1977">
+  <image id="298" name="ГДАСБУ_ф5_оп1_спр8441_185.jpg" width="1363" height="1977">
     <box label="printed_text" source="manual" occluded="0" xtl="94.50" ytl="830.83" xbr="238.03" ybr="876.40" z_order="0">
       <attribute name="Printed Text">5. Адрес</attribute>
     </box>
@@ -35140,7 +36346,7 @@
       <attribute name="Printed Text">1. Фамилия</attribute>
     </box>
   </image>
-  <image id="289" name="ГДАСБУ_ф5_оп1_спр8441_186.jpg" width="1346" height="1999">
+  <image id="299" name="ГДАСБУ_ф5_оп1_спр8441_186.jpg" width="1346" height="1999">
     <polygon label="printed_text" source="manual" occluded="0" points="707.58,1042.78;714.46,1004.92;802.22,1020.41;807.38,1049.66" z_order="0">
       <attribute name="Printed Text">190 г.</attribute>
     </polygon>
@@ -35208,7 +36414,7 @@
       <attribute name="Printed Text">имя и отчество печатными буквами.</attribute>
     </box>
   </image>
-  <image id="290" name="ГДАСБУ_ф5_оп1_спр8441_187.jpg" width="1318" height="1977">
+  <image id="300" name="ГДАСБУ_ф5_оп1_спр8441_187.jpg" width="1318" height="1977">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1164.60" ytl="15.22" xbr="1239.78" ybr="99.52" z_order="0">
       <attribute name="Contented Text">104</attribute>
     </box>
@@ -35320,7 +36526,7 @@
       <attribute name="Printed Text">Телефон</attribute>
     </box>
   </image>
-  <image id="291" name="ГДАСБУ_ф5_оп1_спр8441_188.jpg" width="1324" height="1999">
+  <image id="301" name="ГДАСБУ_ф5_оп1_спр8441_188.jpg" width="1324" height="1999">
     <box label="printed_text" source="manual" occluded="0" xtl="1297.30" ytl="298.51" xbr="1324.00" ybr="868.07" z_order="0">
       <attribute name="Printed Text">имя и отчество печатными буквами.</attribute>
     </box>
@@ -35388,7 +36594,7 @@
       <attribute name="Date Printed Text">11 8 95</attribute>
     </polygon>
   </image>
-  <image id="292" name="ГДАСБУ_ф5_оп1_спр8441_189.jpg" width="1318" height="1943">
+  <image id="302" name="ГДАСБУ_ф5_оп1_спр8441_189.jpg" width="1318" height="1943">
     <box label="printed_text" source="manual" occluded="0" xtl="14.82" ytl="1413.95" xbr="295.04" ybr="1468.62" z_order="0">
       <attribute name="Printed Text">Нач. отдел</attribute>
     </box>
@@ -35500,7 +36706,7 @@
       <attribute name="Printed Text">(должность)</attribute>
     </box>
   </image>
-  <image id="293" name="ГДАСБУ_ф5_оп1_спр8441_169.jpg" width="1768" height="2641">
+  <image id="303" name="ГДАСБУ_ф5_оп1_спр8441_169.jpg" width="1768" height="2641">
     <box label="printed_text" source="manual" occluded="0" xtl="167.11" ytl="502.13" xbr="356.95" ybr="549.99" z_order="0">
       <attribute name="Printed Text">Арестован</attribute>
     </box>
@@ -35646,7 +36852,7 @@
       <attribute name="Date Printed Text">1991 года</attribute>
     </box>
   </image>
-  <image id="294" name="ГДАСБУ_ф5_оп1_спр8441_170.jpg" width="1836" height="2731">
+  <image id="304" name="ГДАСБУ_ф5_оп1_спр8441_170.jpg" width="1836" height="2731">
     <box label="handwritten_text" source="manual" occluded="0" xtl="1672.14" ytl="17.71" xbr="1752.02" ybr="102.91" z_order="0">
       <attribute name="Contented Text">95</attribute>
     </box>
@@ -35764,7 +36970,7 @@
       <attribute name="Date Printed Text">1928 года</attribute>
     </box>
   </image>
-  <image id="295" name="ГДАСБУ_ф5_оп1_спр8441_172.jpg" width="1836" height="2732">
+  <image id="305" name="ГДАСБУ_ф5_оп1_спр8441_172.jpg" width="1836" height="2732">
     <box label="signature" source="manual" occluded="0" xtl="752.50" ytl="365.71" xbr="1401.00" ybr="523.56" z_order="0">
     </box>
     <box label="printed_text" source="manual" occluded="0" xtl="1041.39" ytl="223.08" xbr="1301.26" ybr="268.88" z_order="0">
@@ -35879,7 +37085,7 @@
       <attribute name="Printed Text">Попова Евгения Федоровна</attribute>
     </box>
   </image>
-  <image id="296" name="ГДАСБУ_ф5_оп1_спр8441_173.jpg" width="1769" height="2641">
+  <image id="306" name="ГДАСБУ_ф5_оп1_спр8441_173.jpg" width="1769" height="2641">
     <box label="signature" source="manual" occluded="0" xtl="303.60" ytl="1601.36" xbr="532.29" ybr="1735.67" z_order="0">
     </box>
     <box label="handwritten_text" source="manual" occluded="0" xtl="108.01" ytl="1725.07" xbr="240.14" ybr="1798.40" z_order="0">
@@ -36022,7 +37228,7 @@
       <attribute name="Printed Text">полковник</attribute>
     </box>
   </image>
-  <image id="297" name="ГДАСБУ_ф5_оп1_спр8441_174.jpg" width="1836" height="2732">
+  <image id="307" name="ГДАСБУ_ф5_оп1_спр8441_174.jpg" width="1836" height="2732">
     <box label="signature" source="manual" occluded="0" xtl="798.01" ytl="375.55" xbr="1403.37" ybr="515.25" z_order="0">
     </box>
     <box label="handwritten_text" source="manual" occluded="0" xtl="1691.57" ytl="21.64" xbr="1774.17" ybr="115.87" z_order="0">
@@ -36134,7 +37340,7 @@
       <attribute name="Printed Text">Кашинова Елизавета Николаевна</attribute>
     </box>
   </image>
-  <image id="298" name="ГДАСБУ_ф5_оп1_спр8441_175.jpg" width="1768" height="2641">
+  <image id="308" name="ГДАСБУ_ф5_оп1_спр8441_175.jpg" width="1768" height="2641">
     <box label="signature" source="manual" occluded="0" xtl="265.01" ytl="1608.07" xbr="509.04" ybr="1739.64" z_order="0">
     </box>
     <box label="handwritten_text" source="manual" occluded="0" xtl="85.08" ytl="1709.00" xbr="241.39" ybr="1791.37" z_order="0">
@@ -36277,7 +37483,7 @@
       <attribute name="Printed Text">юстиции 3 класса</attribute>
     </box>
   </image>
-  <image id="299" name="ГДАСБУ_ф5_оп1_спр8441_176.jpg" width="1836" height="2731">
+  <image id="309" name="ГДАСБУ_ф5_оп1_спр8441_176.jpg" width="1836" height="2731">
     <box label="signature" source="manual" occluded="0" xtl="757.78" ytl="387.50" xbr="1323.10" ybr="518.89" z_order="0">
     </box>
     <box label="printed_text" source="manual" occluded="0" xtl="1067.14" ytl="216.73" xbr="1313.80" ybr="272.58" z_order="0">
@@ -36389,7 +37595,7 @@
       <attribute name="Contented Text">98</attribute>
     </box>
   </image>
-  <image id="300" name="ГДАСБУ_ф5_оп1_спр8441_177.jpg" width="1802" height="2642">
+  <image id="310" name="ГДАСБУ_ф5_оп1_спр8441_177.jpg" width="1802" height="2642">
     <box label="signature" source="manual" occluded="0" xtl="261.27" ytl="1612.54" xbr="552.52" ybr="1771.60" z_order="0">
     </box>
     <box label="signature" source="manual" occluded="0" xtl="199.90" ytl="1798.09" xbr="597.88" ybr="2010.20" z_order="0">
@@ -36532,7 +37738,7 @@
       <attribute name="Printed Text">юстиции 3 класса</attribute>
     </box>
   </image>
-  <image id="301" name="ГДАСБУ_ф5_оп1_спр8441_178.jpg" width="1836" height="2731">
+  <image id="311" name="ГДАСБУ_ф5_оп1_спр8441_178.jpg" width="1836" height="2731">
     <box label="signature" source="manual" occluded="0" xtl="777.82" ytl="382.40" xbr="1367.92" ybr="505.52" z_order="0">
     </box>
     <box label="printed_text" source="manual" occluded="0" xtl="1064.83" ytl="198.12" xbr="1311.49" ybr="253.98" z_order="0">
@@ -36647,7 +37853,7 @@
       <attribute name="Contented Text">99</attribute>
     </box>
   </image>
-  <image id="302" name="ГДАСБУ_ф5_оп1_спр8441_179.jpg" width="1802" height="2642">
+  <image id="312" name="ГДАСБУ_ф5_оп1_спр8441_179.jpg" width="1802" height="2642">
     <box label="signature" source="manual" occluded="0" xtl="313.21" ytl="1608.86" xbr="541.58" ybr="1743.86" z_order="0">
     </box>
     <box label="signature" source="manual" occluded="0" xtl="158.60" ytl="1761.87" xbr="636.68" ybr="1972.20" z_order="0">
@@ -36790,7 +37996,7 @@
       <attribute name="Printed Text">юстиции 3 класса</attribute>
     </box>
   </image>
-  <image id="303" name="ГДАСБУ_ф5_оп1_спр8441_160.jpg" width="1836" height="2731">
+  <image id="313" name="ГДАСБУ_ф5_оп1_спр8441_160.jpg" width="1836" height="2731">
     <box label="printed_text" source="manual" occluded="0" xtl="627.16" ytl="624.72" xbr="1114.79" ybr="691.77" z_order="0">
       <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
     </box>
@@ -36911,7 +38117,7 @@
       <attribute name="Printed Text">в отношении</attribute>
     </box>
   </image>
-  <image id="304" name="ГДАСБУ_ф5_оп1_спр8441_161.jpg" width="1769" height="2641">
+  <image id="314" name="ГДАСБУ_ф5_оп1_спр8441_161.jpg" width="1769" height="2641">
     <box label="handwritten_text" source="manual" occluded="0" xtl="148.49" ytl="1730.35" xbr="263.89" ybr="1807.28" z_order="0">
       <attribute name="Contented Text">Зам</attribute>
     </box>
@@ -37072,7 +38278,7 @@
       <attribute name="Printed Text">П.Г.Кушнир.</attribute>
     </box>
   </image>
-  <image id="305" name="ГДАСБУ_ф5_оп1_спр8441_162.jpg" width="1837" height="2732">
+  <image id="315" name="ГДАСБУ_ф5_оп1_спр8441_162.jpg" width="1837" height="2732">
     <polygon label="signature" source="manual" occluded="0" points="758.62,465.53;1224.08,451.30;1417.17,382.20;1380.58,451.30;986.27,536.67;774.88,522.44" z_order="0">
     </polygon>
     <box label="printed_text" source="manual" occluded="0" xtl="539.11" ytl="733.62" xbr="886.67" ybr="774.48" z_order="0">
@@ -37196,7 +38402,7 @@
       <attribute name="Printed Text">ЗАКЛЮЧЕНИЕ</attribute>
     </box>
   </image>
-  <image id="306" name="ГДАСБУ_ф5_оп1_спр8441_163.jpg" width="1769" height="2641">
+  <image id="316" name="ГДАСБУ_ф5_оп1_спр8441_163.jpg" width="1769" height="2641">
     <box label="printed_text" source="manual" occluded="0" xtl="237.03" ytl="2497.63" xbr="367.39" ybr="2547.00" z_order="0">
       <attribute name="Printed Text">Подпись</attribute>
     </box>
@@ -37360,7 +38566,7 @@
       <attribute name="Printed Text">Апраксина Константина Павловича</attribute>
     </box>
   </image>
-  <image id="307" name="ГДАСБУ_ф5_оп1_спр8441_164.jpg" width="1836" height="2732">
+  <image id="317" name="ГДАСБУ_ф5_оп1_спр8441_164.jpg" width="1836" height="2732">
     <box label="printed_text" source="manual" occluded="0" xtl="131.18" ytl="1772.50" xbr="1710.46" ybr="1813.11" z_order="0">
       <attribute name="Printed Text">ного фронтов вынесено постановление о расстреле Алчевского Д.А.</attribute>
     </box>
@@ -37481,7 +38687,7 @@
       <attribute name="Printed Text">за службу у белых. Решение по делу не изменялось.</attribute>
     </box>
   </image>
-  <image id="308" name="ГДАСБУ_ф5_оп1_спр8441_165.jpg" width="1768" height="2642">
+  <image id="318" name="ГДАСБУ_ф5_оп1_спр8441_165.jpg" width="1768" height="2642">
     <box label="printed_text" source="manual" occluded="0" xtl="158.96" ytl="1223.90" xbr="919.10" ybr="1266.86" z_order="0">
       <attribute name="Printed Text">распространяется действие ст. 1 Закона Украи</attribute>
     </box>
@@ -37645,7 +38851,7 @@
       <attribute name="Printed Text">по адресу:</attribute>
     </box>
   </image>
-  <image id="309" name="ГДАСБУ_ф5_оп1_спр8441_166.jpg" width="1836" height="2731">
+  <image id="319" name="ГДАСБУ_ф5_оп1_спр8441_166.jpg" width="1836" height="2731">
     <box label="date_printed" source="manual" occluded="0" xtl="968.57" ytl="1644.78" xbr="1472.46" ybr="1701.67" z_order="0">
       <attribute name="Date Printed Text">22 декабря 1920 года</attribute>
     </box>
@@ -37766,7 +38972,7 @@
       <attribute name="Printed Text">Как видно из заполненной Долгоновским анкеты, он в 1920 году</attribute>
     </box>
   </image>
-  <image id="310" name="ГДАСБУ_ф5_оп1_спр8441_167.jpg" width="1769" height="2641">
+  <image id="320" name="ГДАСБУ_ф5_оп1_спр8441_167.jpg" width="1769" height="2641">
     <box label="printed_text" source="manual" occluded="0" xtl="130.59" ytl="2285.20" xbr="325.06" ybr="2330.29" z_order="0">
       <attribute name="Printed Text">по адресу:</attribute>
     </box>
@@ -37930,7 +39136,7 @@
     <polygon label="signature" source="manual" occluded="0" points="293.59,1586.73;296.45,1684.00;479.55,1715.47;528.19,1589.59" z_order="0">
     </polygon>
   </image>
-  <image id="311" name="ГДАСБУ_ф5_оп1_спр8441_168.jpg" width="1836" height="2732">
+  <image id="321" name="ГДАСБУ_ф5_оп1_спр8441_168.jpg" width="1836" height="2732">
     <box label="printed_text" source="manual" occluded="0" xtl="413.53" ytl="1114.34" xbr="719.25" ybr="1180.19" z_order="0">
       <attribute name="Printed Text">Курская губ.</attribute>
     </box>
@@ -38048,7 +39254,7 @@
       <attribute name="Printed Text">Год рождения</attribute>
     </box>
   </image>
-  <image id="312" name="ГДАСБУ_ф5_оп1_спр8441_171.jpg" width="1768" height="2641">
+  <image id="322" name="ГДАСБУ_ф5_оп1_спр8441_171.jpg" width="1768" height="2641">
     <box label="printed_text" source="manual" occluded="0" xtl="711.60" ytl="2275.89" xbr="1096.27" ybr="2316.71" z_order="0">
       <attribute name="Printed Text">(степень родства, ф.,ен., о)</attribute>
     </box>
