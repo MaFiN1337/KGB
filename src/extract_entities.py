@@ -21,46 +21,44 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 DEFAULT_MODEL = "llama3.1:8b"
 
+NAME_PROMPT = (
+    "List all PERSON names mentioned in this KGB/OGPU archival document (1920s–1930s).\n"
+    "Return each name in nominative case (dictionary form).\n"
+    "Include everyone: speakers, interrogated persons, people merely mentioned.\n"
+    "Include unfamiliar names (Crimean Tatar, Polish, etc.).\n"
+    "Exclude organizations, institutions, and job titles without a surname.\n\n"
+    "Return ONLY JSON, no explanation:\n"
+    "{\"names\": [\"Surname1\", \"Surname2\"]}"
+)
+
 SYSTEM_PROMPT = (
-    "Ти аналізуєш документи архіву КГБ/ОГПУ 1920–1930-х років.\n\n"
-    "Знайди всі зв'язки між конкретними людьми. Для кожного зв'язку поверни:\n"
-    "  source — хто говорить (називний відмінок)\n"
-    "  target — про кого йдеться (називний відмінок)\n"
-    "  sentiment — «Захист» | «Звинувачення» | «Нейтрально»\n"
-    "  evidence_quote — серед речень тексту знайди ПЕРШЕ, де є прізвище target або source,\n"
-    "    і скопіюй його дослівно (≤120 символів).\n"
-    "    Займенник («його», «її», «мене», «ним») НЕ є прізвищем.\n"
-    "    Якщо такого речення немає — запис не створюй.\n\n"
-    "Правила:\n"
-    "  1. Тільки реальні люди (прізвище або ім'я). "
-    "НЕ витягуй: ОГПУ, КГБ, партія, ВКП(б), влада, держава, завод, цех тощо.\n"
-    "  2. source — людина, що ГОВОРИТЬ.\n"
-    "     «я»/«мене»/«мені» або цитата, що починається з «Я» → source=[Автор]; без [Автор] — пропусти.\n"
-    "     Якщо в кінці документа є «Підпис: X» або «Майор X» — source=X (ігноруй [Автор]).\n"
-    "     Приклади:\n"
-    "       «Я считаю Котляра неблагонадёжным» → source=[Автор], target=Котляр, Звинувачення.\n"
-    "       «Філонюк обмовляє мене»            → source=[Автор], target=Філонюк, Звинувачення.\n"
-    "  3. «він»/«вона» — лише якщо однозначно хто; «ми»/«ти»/«ви» — пропускай.\n"
-    "  4. Одне речення може стосуватися двох людей — тоді два записи:\n"
-    "     «Сітдіков наклепував на Котляра» →\n"
-    "       [Автор]→Сітдіков Звинувачення (злочинець),\n"
-    "       [Автор]→Котляр Захист (жертва наклепу).\n"
-    "     Але якщо другий — «мене» (тобто [Автор]) — другий запис НЕ потрібен.\n"
-    "  5. ВОПРОС/ОТВЕТ: evidence_quote — лише речення після «ОТВЕТ:». Ніколи після «ВОПРОС:».\n"
-    "  6. НЕ використовуй рядки «Підпис:» / «Подпись:» / «Підписав:» як evidence_quote.\n"
-    "     Якщо документ адресовано («Начальнику X» / «тов. X»): target=X, Нейтрально,\n"
-    "     evidence_quote = рядок адреси («Начальнику ... тов. X»).\n"
-    "  7. «Захист» — автор ЯВНО захищає або виправдовує особу ('чесний громадянин', 'безпідставно' тощо).\n"
-    "     Якщо автор цитує або повідомляє про антирадянські слова/дії особи — це ЗАВЖДИ «Звинувачення»,\n"
-    "     навіть якщо автор від цих дій дистанціюється («Я не підтримував» тощо).\n"
-    "  8. «Нейтрально» — будь-яка згадка прізвища без оцінки. "
-    "Витягуй ВСІХ людей з тексту, включаючи тих, хто просто присутній чи згаданий.\n"
-    "     Якщо в тексті про особу сказано «прізвища не знаю» або «якийсь» — пропускай.\n\n"
-    "Повернути ТІЛЬКИ JSON без пояснень:\n"
-    "{\"relations\": ["
-    "{\"source\": \"Прізвище\", \"target\": \"Прізвище\", "
-    "\"sentiment\": \"Звинувачення\", "
-    "\"evidence_quote\": \"речення з прізвищем\"}]}"
+    "Extract all relations between people from this KGB/OGPU archival document (1920s–1930s).\n\n"
+    "For each relation return:\n"
+    "  source       — who is speaking, nominative case\n"
+    "  target       — who is being spoken about, nominative case\n"
+    "  sentiment    — Звинувачення | Захист | Нейтрально\n"
+    "  evidence_quote — first sentence from the document containing target or source name "
+    "(or an unambiguous pronoun), copied verbatim, ≤120 chars. "
+    "If no such sentence exists, skip this relation entirely.\n\n"
+    "Rules:\n"
+    "  1. Only real people. Never extract organizations (ОГПУ, КГБ, ВКП(б), Ширкет, etc.).\n"
+    "  2. source is the SPEAKER. Use [Автор] when the speaker says «я»/«мене»/«мені».\n"
+    "     If the document ends with «Підпис: X» or a rank+name, use that as source.\n"
+    "     Example: «Я считаю Котляра неблагонадёжным» → source=[Автор], target=Котляр, Звинувачення.\n"
+    "  3. In ВОПРОС/ОТВЕТ format: evidence_quote only from sentences after «ОТВЕТ:», never after «ВОПРОС:».\n"
+    "  4. Sentiment — choose one of these three exact strings:\n"
+    "     \"Звинувачення\" (ACCUSATION) — use when speaker reports that target:\n"
+    "       • committed anti-Soviet acts or made anti-Soviet statements\n"
+    "       • was a member of nationalist organizations (Міллі Фірка, etc.)\n"
+    "       • had contacts with enemies of Soviet power or political emigrants\n"
+    "       • was involved in any politically suspicious activity\n"
+    "       This applies even when phrased as a neutral fact: "
+    "«Х був членом Міллі Фірки» = Звинувачення.\n"
+    "     \"Захист\" (DEFENSE) — speaker explicitly defends target's Soviet loyalty.\n"
+    "     \"Нейтрально\" (NEUTRAL) — purely factual: met someone, worked together, location.\n\n"
+    "Return ONLY JSON, no explanation:\n"
+    "{\"relations\": [{\"source\": \"Name\", \"target\": \"Name\", "
+    "\"sentiment\": \"Звинувачення\", \"evidence_quote\": \"...\"}]}"
 )
 
 _HEADER_RE = re.compile(
@@ -94,6 +92,20 @@ _SKIP_NAMES = {
     "[автор]",  # unresolved speaker placeholder
 }
 
+# Organizations and non-person tokens that LLMs repeatedly hallucinate as names
+_ORG_BLOCKLIST: set[str] = {
+    # secret police
+    "огпу", "кгб", "нквд", "гпу",
+    # party/state bodies
+    "вкп", "вкп(б)", "ркп", "цк", "снк", "цик", "ц.и.к", "ц.и.к.", "татбюро",
+    "наркозем", "наркомат", "наркомісте", "наркмоисте",
+    # Crimean institutions
+    "міллі фірка", "милли фирка", "милли-фирка",
+    "ширкет", "ширкета",
+    # misc abbreviations that are not names
+    "ква", "по",
+}
+
 
 class Relation(BaseModel):
     source: str
@@ -117,7 +129,11 @@ def detect_speaker_regex(text: str) -> str | None:
 
 
 def _clean_name(raw: str) -> str:
-    name = _RANK_RE.sub("", raw.strip())
+    raw = raw.strip()
+    m = re.match(r"\[Автор:\s*([^\]]+)\]", raw, re.IGNORECASE)
+    if m:
+        raw = m.group(1).strip()
+    name = _RANK_RE.sub("", raw)
     name = _INITIALS_RE.sub("", name)
     name = _SINGLE_INITIAL_RE.sub("", name)
     return name.strip()
@@ -127,7 +143,10 @@ def is_valid_name(name: str) -> bool:
     cleaned = _clean_name(name).strip()
     if len(cleaned) < 3:
         return False
-    if cleaned.lower() in _SKIP_NAMES:
+    low = cleaned.lower()
+    if low in _SKIP_NAMES:
+        return False
+    if low in _ORG_BLOCKLIST:
         return False
     if not re.search(r"[А-ЯЁа-яёІіЇїЄє]", cleaned):
         return False
@@ -150,14 +169,71 @@ def _extract_json(raw: str) -> dict:
     return {"relations": []}
 
 
-def call_llm(text: str, current_speaker: str | None, model: str, threads: int) -> DocumentResponse:
+def _find_evidence(text: str, name: str) -> str:
+    pattern = re.compile(re.escape(name.split()[0]), re.IGNORECASE)
+    for chunk in re.findall(r"ОТВЕТ[:\s]+(.*?)(?=ВОПРОС[:\s]|$)", text, re.DOTALL | re.IGNORECASE):
+        for sent in re.split(r"(?<=[.!?])\s+", chunk):
+            if pattern.search(sent):
+                return sent.strip()[:120]
+    for sent in re.split(r"(?<=[.!?])\s+", text):
+        if pattern.search(sent):
+            return sent.strip()[:120]
+    return ""
+
+
+def _fill_missing(
+    relations: list[Relation],
+    known_names: list[str],
+    text: str,
+    speaker: str | None,
+) -> list[Relation]:
+    if not speaker:
+        return relations
+    mentioned = {r.source.lower() for r in relations} | {r.target.lower() for r in relations}
+    extra = []
+    for name in known_names:
+        if name.lower() in mentioned or name.lower() == speaker.lower():
+            continue
+        evidence = _find_evidence(text, name)
+        if not evidence:
+            continue
+        extra.append(Relation(source=speaker, target=name, sentiment="Нейтрально", evidence_quote=evidence))
+    return relations + extra
+
+
+def extract_names(text: str, model: str, threads: int) -> list[str]:
+    try:
+        resp = _ollama.chat(
+            model=model,
+            messages=[
+                {"role": "system", "content": NAME_PROMPT},
+                {"role": "user", "content": text[:3500]},
+            ],
+            format="json",
+            options={"temperature": 0.0, "num_ctx": 4096, "num_predict": 256, "num_thread": threads},
+        )
+        data = _extract_json(resp.message.content)
+        raw = data.get("names", [])
+        return [_clean_name(n) for n in raw if isinstance(n, str) and is_valid_name(n)]
+    except Exception:
+        return []
+
+
+def call_llm(
+    text: str,
+    current_speaker: str | None,
+    model: str,
+    threads: int,
+    known_names: list[str] | None = None,
+) -> DocumentResponse:
     speaker_line = f"[Автор: {current_speaker}]\n\n" if current_speaker else ""
+    names_line = ("Відомі особи у тексті (лише для довідки, НЕ джерело цитат): " + ", ".join(known_names) + "\n\n") if known_names else ""
     try:
         resp = _ollama.chat(
             model=model,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": speaker_line + text[:3500]},
+                {"role": "user", "content": speaker_line + names_line + text[:3500]},
             ],
             format="json",
             options={"temperature": 0.1, "num_ctx": 4096, "num_predict": 512, "num_thread": threads},
@@ -216,12 +292,17 @@ def main():
 
         print(f"[{i}/{len(documents)}] id={doc_id}", end=" ... ", flush=True)
 
-        result = call_llm(text, current_speaker, args.model, args.threads)
+        known_names = extract_names(text, args.model, args.threads)
+        print(f"names={known_names}", end=" | ", flush=True)
+
+        result = call_llm(text, current_speaker, args.model, args.threads, known_names)
+
+        relations = _fill_missing(result.relations, known_names, text, current_speaker)
 
         print(f"speaker={current_speaker or '?'}", end=" | ", flush=True)
 
         count = 0
-        for rel in result.relations:
+        for rel in relations:
             src = _clean_name(rel.source)
             tgt = _clean_name(rel.target)
             if not is_valid_name(src) or not is_valid_name(tgt):
@@ -240,7 +321,7 @@ def main():
 
         print(f"{count} relations")
 
-    edges_raw_path = Path(args.output_dir) / "edges_raw.csv"
+    edges_raw_path = Path(args.output_dir) / "edges_raw_ollama.csv"
     with open(edges_raw_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["source", "target", "sentiment", "evidence_quote", "id"])
         w.writeheader()
