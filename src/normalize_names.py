@@ -4,6 +4,7 @@ import csv
 import argparse
 import re
 import sys
+import threading
 from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
@@ -15,12 +16,14 @@ except ImportError:
     sys.exit(1)
 
 DEFAULT_MODEL = "llama3.1:8b"
-BATCH_SIZE = 60
+BATCH_SIZE = 20
 
 NORMALIZE_PROMPT = (
     "Ти аналізуєш список імен людей з архівних документів КГБ/ОГПУ 1920–1930-х років.\n\n"
     "Одна людина може зустрічатися по-різному:\n"
-    "  — різні відмінки: «КОТЛЯРА», «Котляру», «Котляр»\n"
+    "  — різні відмінки (слов'янські): «КОТЛЯРА», «Котляру», «Котляр»\n"
+    "  — відмінювання неслов'янських прізвищ за рос. граматикою: «ХАТТАТОВЫМ» → «Хаттатов»,\n"
+    "    «ГОВЕНОМ» → «Говен», «ГАЛИЕВЫХ» → «Галієв», «БЕЛА-КУНА» → «Бела-Кун»\n"
     "  — різна повнота: «Коваленко», «Коваленко П.», «Коваленко Петро», «Коваленко Петро Семенович»\n"
     "  — укр/рос написання: «Сітдіков» і «Ситдиков»\n"
     "  — CAPS і TitleCase: «БРОНШТЕЙНА» і «Бронштейн»\n"
@@ -40,9 +43,104 @@ NORMALIZE_PROMPT = (
 
 
 def _stem4(name: str) -> str:
-    """First 4 Cyrillic chars of first word — used to validate LLM merge proposals."""
     first = name.strip().split()[0] if name.strip() else name
     return re.sub(r"[^а-яёіїєА-ЯЁІЇЄa-z]", "", first).lower()[:4]
+
+
+def _words(name: str) -> list[str]:
+    return re.split(r"[\s\-]+", name.lower())
+
+
+def _stems_match(a: str, b: str) -> bool:
+    """Used to validate LLM merges: allows 1-char transliteration diff (stems >= 4 chars)."""
+    if a.lower() == b.lower():
+        return True
+    aw, bw = _words(a), _words(b)
+
+    # Multi-word same count: all word-positions must match (reuse _strict logic)
+    if len(aw) > 1 and len(aw) == len(bw):
+        for w1, w2 in zip(aw, bw):
+            if w1 == w2:
+                continue
+            s1, s2 = w1[:4], w2[:4]
+            if len(s1) < 4 or len(s2) < 4 or s1[0] != s2[0]:
+                return False
+            if sum(c1 != c2 for c1, c2 in zip(s1, s2)) > 1:
+                return False
+        return True
+
+    # Single-word or different lengths: original stem4 logic
+    s1, s2 = _stem4(a), _stem4(b)
+    if s1 == s2:
+        return True
+    if len(s1) >= 4 and len(s2) >= 4:
+        if sum(c1 != c2 for c1, c2 in zip(s1, s2)) <= 1:
+            return True
+    # word prefix/suffix: "Муслюмов" ⊂ "Аким Муслюмов"; "Чобан-Заде" ⊂ "Чобан Заде Бекир"
+    if aw and bw and len(aw) != len(bw):
+        shorter, longer = (aw, bw) if len(aw) < len(bw) else (bw, aw)
+        if longer[:len(shorter)] == shorter or longer[-len(shorter):] == shorter:
+            return True
+    return False
+
+
+def _merge_by_stem(names: list[str], freq: dict[str, int] | None = None) -> dict[str, str]:
+    """Deterministic post-pass: merge transliteration variants and short-form names.
+
+    Rules:
+    - case-insensitive exact match → merge
+    - same word count: all word-positions must match (exact OR 1-char stem4 diff, len>=4)
+      single-word exception: skip if one string is a prefix of the other (Сейдамет/Сейдаметов)
+    - different word counts: word prefix/suffix OR joined-string match (Чобанзаде/Чобан-Заде)
+    """
+    def _strict(a: str, b: str) -> bool:
+        if a.lower() == b.lower():
+            return True
+        aw, bw = _words(a), _words(b)
+
+        if len(aw) != len(bw):
+            shorter, longer = (aw, bw) if len(aw) < len(bw) else (bw, aw)
+            if longer[:len(shorter)] == shorter or longer[-len(shorter):] == shorter:
+                return True
+            # "Чобанзаде" ≡ "Чобан Заде ..." — joined shorter is prefix/suffix of joined longer
+            js, jl = "".join(shorter), "".join(longer)
+            return jl.startswith(js) or jl.endswith(js)
+
+        # same word count: all positions must match within 1-char stem diff
+        for w1, w2 in zip(aw, bw):
+            if w1 == w2:
+                continue
+            s1, s2 = w1[:4], w2[:4]
+            if len(s1) < 4 or len(s2) < 4:
+                return False
+            # single-word: if one extends the other, only allow oblique case endings
+            if len(aw) == 1 and (w1.startswith(w2) or w2.startswith(w1)):
+                longer_w = w1 if len(w1) > len(w2) else w2
+                if not any(longer_w.endswith(e) for e in _OBLIQUE_ENDS):
+                    return False
+            # first char must match — different initial consonants = different people
+            if s1[0] != s2[0]:
+                return False
+            if sum(c1 != c2 for c1, c2 in zip(s1, s2)) > 1:
+                return False
+        return True
+
+    ordered = sorted(names, key=lambda n: (-(freq or {}).get(n, 0), -len(n)))
+    groups: list[list[str]] = []
+    for name in ordered:
+        placed = False
+        for g in groups:
+            if any(_strict(name, m) for m in g):
+                g.append(name)
+                placed = True
+                break
+        if not placed:
+            groups.append([name])
+    return {name: _best_canonical(g, freq) for g in groups for name in g}
+
+
+def _to_title(name: str) -> str:
+    return " ".join(w.title() if w == w.upper() and len(w) > 1 else w for w in name.split())
 
 
 def _extract_json(raw: str) -> list:
@@ -68,26 +166,46 @@ def _extract_json(raw: str) -> list:
 
 
 def normalize_batch(names: list[str], model: str,
-                    context: dict[str, str] | None = None) -> dict[str, str]:
+                    context: dict[str, str] | None = None,
+                    freq: dict[str, int] | None = None) -> dict[str, str]:
     lines = []
     for n in names:
         ctx = context.get(n, "") if context else ""
         lines.append(f"- {n}" + (f"  (приклад з тексту: «{ctx}»)" if ctx else ""))
     names_text = "\n".join(lines)
-    try:
-        resp = _ollama.chat(
-            model=model,
-            messages=[
-                {"role": "system", "content": NORMALIZE_PROMPT},
-                {"role": "user", "content": names_text},
-            ],
-            format="json",
-            options={"temperature": 0.0},
-        )
-        groups = _extract_json(resp.message.content)
-    except Exception as e:
-        print(f"  [WARN] LLM error: {e}")
+    stop = threading.Event()
+    parts: list[str] = []
+    exc: list = [None]
+
+    def _call():
+        try:
+            for chunk in _ollama.chat(
+                model=model,
+                messages=[
+                    {"role": "system", "content": NORMALIZE_PROMPT},
+                    {"role": "user", "content": names_text},
+                ],
+                format="json",
+                options={"temperature": 0.0, "num_ctx": 4096, "num_predict": 512, "num_thread": 6},
+                stream=True,
+            ):
+                if stop.is_set():
+                    break
+                parts.append(chunk.message.content or "")
+        except Exception as e:
+            exc[0] = e
+
+    t = threading.Thread(target=_call, daemon=True)
+    t.start()
+    t.join(timeout=180)
+    if t.is_alive():
+        stop.set()
+        print("  [WARN] LLM timeout, skipping batch")
         return {n: n for n in names}
+    if exc[0]:
+        print(f"  [WARN] LLM error: {exc[0]}")
+        return {n: n for n in names}
+    groups = _extract_json("".join(parts))
 
     mapping: dict[str, str] = {}
     seen = set()
@@ -114,29 +232,30 @@ def normalize_batch(names: list[str], model: str,
         if k not in names_set:
             continue
         if k == v:
-            validated[k] = k
-        elif _stem4(k) == _stem4(v):
+            validated[k] = _to_title(k)
+        elif _stems_match(k, v):
             if v in names_set:
-                # canonical exists in our input — use as-is
-                validated[k] = v
+                validated[k] = _to_title(v)
             else:
-                # LLM invented a full-name expansion not in input;
-                # pick best nominative form from same-stem input names
-                same_stem = [n for n in names_set if _stem4(n) == _stem4(v)]
-                validated[k] = _best_canonical(same_stem) if same_stem else k
+                same_stem = [n for n in names_set if _stems_match(n, v)]
+                validated[k] = _best_canonical(same_stem, freq) if same_stem else _to_title(k)
         else:
-            validated[k] = k  # wrong surname stem — reject entirely
+            validated[k] = _to_title(k)
     return validated
 
 
-def _best_canonical(candidates: list[str]) -> str:
-    """Among candidates, prefer nominative form over genitive, then longest."""
+_OBLIQUE_ENDS = ("ым", "им", "ых", "их", "ом", "ем", "ого", "его", "ому", "ему")
+
+
+def _best_canonical(candidates: list[str], freq: dict[str, int] | None = None) -> str:
+    """Prefer nominative over oblique/genitive, then longest (fuller name), then most frequent."""
     def score(n: str) -> tuple:
-        last = n.lower()[-1] if n else ""
-        # Ukrainian/Russian genitive surname endings: -а, -я (but not -ко, -нко, -о)
-        gen = last in ("а", "я") and not n.lower().endswith(("ко", "нко"))
-        return (not gen, len(n))
-    return max(candidates, key=score)
+        low = n.lower()
+        oblique = any(low.endswith(e) for e in _OBLIQUE_ENDS)
+        gen = low[-1] in ("а", "я") and not low.endswith(("ко", "нко")) if low else False
+        frequency = freq.get(n, 0) if freq else 0
+        return (not oblique, not gen, len(n), frequency)
+    return _to_title(max(candidates, key=score))
 
 
 def run(input_path: str | Path, output_dir: str | Path, model: str,
@@ -160,10 +279,14 @@ def run(input_path: str | Path, output_dir: str | Path, model: str,
         print(f"  {n}")
 
     name_context: dict[str, str] = {}
+    name_freq: dict[str, int] = {}
     for edge in edges_raw:
         for field in ("source", "target"):
             name = edge[field].strip()
-            if name and name not in name_context and edge.get("evidence_quote"):
+            if not name:
+                continue
+            name_freq[name] = name_freq.get(name, 0) + 1
+            if name not in name_context and edge.get("evidence_quote"):
                 name_context[name] = edge["evidence_quote"][:80]
 
     full_mapping: dict[str, str] = {}
@@ -171,11 +294,25 @@ def run(input_path: str | Path, output_dir: str | Path, model: str,
     batches = [all_names[i: i + BATCH_SIZE] for i in range(0, len(all_names), BATCH_SIZE)]
     for idx, batch in enumerate(batches, 1):
         print(f"Normalizing batch {idx}/{len(batches)} ({len(batch)} names) ...", flush=True)
-        batch_map = normalize_batch(batch, model, context=name_context)
+        batch_map = normalize_batch(batch, model, context=name_context, freq=name_freq)
         full_mapping.update(batch_map)
         for raw, canonical in sorted(batch_map.items()):
             if raw != canonical:
                 print(f"  {raw!r} → {canonical!r}")
+
+    canonical_freq: dict[str, int] = {}
+    for raw, canon in full_mapping.items():
+        canonical_freq[canon] = canonical_freq.get(canon, 0) + name_freq.get(raw, 0)
+
+    canonicals = list(set(full_mapping.values()))
+    stem_map = _merge_by_stem(canonicals, canonical_freq)
+    extra_merges = {k: v for k, v in stem_map.items() if k != v}
+    if extra_merges:
+        print(f"\nStem post-pass ({len(extra_merges)} merges):")
+        for k, v in sorted(extra_merges.items()):
+            print(f"  {k!r} → {v!r}")
+    for k in full_mapping:
+        full_mapping[k] = stem_map.get(full_mapping[k], full_mapping[k])
 
     edges_final = []
     for edge in edges_raw:
@@ -193,8 +330,8 @@ def run(input_path: str | Path, output_dir: str | Path, model: str,
 
     node_ids = sorted({e["source"] for e in edges_final} | {e["target"] for e in edges_final})
 
-    nodes_path = output_dir / "nodes.csv"
-    edges_path = output_dir / "edges.csv"
+    nodes_path = output_dir / "nodes_ollama.csv"
+    edges_path = output_dir / "edges_ollama.csv"
 
     with open(nodes_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["id", "label"])
@@ -221,7 +358,7 @@ def run(input_path: str | Path, output_dir: str | Path, model: str,
 
 def main():
     parser = argparse.ArgumentParser(description="KGB name normalizer — pass 2")
-    parser.add_argument("--input", default="data/processed/edges_raw.csv")
+    parser.add_argument("--input", default="data/processed/edges_raw_ollama.csv")
     parser.add_argument("--output_dir", default="data/processed")
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--keep-raw", action="store_true",
