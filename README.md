@@ -51,8 +51,8 @@ KGB/
 │   ├── extract_entities.py         # pass 1: LLM relation extractor
 │   ├── normalize_names.py          # pass 2: LLM name normalizer
 │   └── eval_edges.py               # eval extraction quality vs expected
-├── tests/
-│   └── data/                       # local test datasets (gitignored)
+├── output/
+│   └── graph.html                  # interactive graphs
 ├── requirements.txt
 └── README.md
 ```
