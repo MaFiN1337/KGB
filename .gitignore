@@ -14,9 +14,12 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Generated pipeline output — run the pipeline to reproduce
-data/processed/
+# Pipeline output
+data/processed/*
 
 # Test data and local dev scripts — not tracked
 tests/data/
 src/eval_edges.py
+
+# Secrets
+.env
