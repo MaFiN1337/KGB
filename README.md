@@ -50,7 +50,7 @@ KGB/
 │   ├── parse_xml.py                # XML → documents.json
 │   ├── extract_entities.py         # pass 1: LLM relation extractor
 │   ├── normalize_names.py          # pass 2: LLM name normalizer
-│   └── eval_edges.py               # eval extraction quality vs expected
+│   └── build_graph.py               # graph generator
 ├── output/
 │   └── graph.html                  # interactive graphs
 ├── requirements.txt
