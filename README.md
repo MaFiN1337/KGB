@@ -102,8 +102,8 @@ python src/extract_entities.py --input data/interim/documents.json --keep-raw
 
 ## Team
 
-| Role | Responsibility |
-|---|---|
-| **A — Data Engineer** | XML parsing, text reconstruction, JSON handover |
-| **B — NLP Engineer** | Entity extraction via LLM, name normalization |
-| **C — Graph Scientist** | Network construction, interactive visualization |
+| Name | Role | Responsibility |
+|---|---|---|
+| Valentyna Dermenzhy | **A — Data Engineer** | XML parsing, text reconstruction, JSON handover |
+| Oleksandra Malii | **B — NLP Engineer** | Entity extraction via LLM, name normalization |
+| Anton Pihuliak | **C — Graph Scientist** | Network construction, interactive visualization |
